@@ -3,6 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/test','HomeController@test');
+
+Route::middleware(['auth'])->group(function(){
+    Route::get('/administration', 'AdminController@index');
+    Route::get('/administration/documents','DocumentController@index');
+    Route::get('/administration/documents/add','DocumentController@create');
+    Route::post('/administration/documents/add','DocumentController@store');
+    Route::get('/logout', 'UserController@signout');
 });
+
+
+Route::get('/login','UserController@login')->name('login');
+Route::post('/login','UserController@checkLogin');
