@@ -15,7 +15,8 @@ class DocumentController extends Controller
      */
     public function index()
     {
-        return view('admin.documents');
+        $documents = Document::orderBy('name','asc')->get();
+        return view('admin.documents',compact('documents'));
     }
 
     /**
@@ -48,6 +49,7 @@ class DocumentController extends Controller
         }
 
         $document = ($request->input('document_id') !== NULL)  ? Document::findOrFail($request->document_id) : new Document;
+        $document->name = $request->input('name');
         $document->filename = $fileNameToStore;
         $document->documentlist_id = $request->input('documentlist_id');
         $document->save();

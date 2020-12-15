@@ -173,7 +173,7 @@ header {
 	background: #fff;
 }
 .header .topbar {
-	background: #8a152e;
+	background: #DD1919;
 }
 .topbar ul {
 	margin: 0px;
@@ -1984,7 +1984,7 @@ body .btn-group.open .dropdown-toggle {
 	color: #e1306c;
 }
 .share-post .yt {
-	color: #ff0000;
+	color: #DD1919;
 }
 .share-post .linked {
 	color: #0077b5;
@@ -4650,7 +4650,7 @@ ul.gallery-2-col img, ul.gallery-3-col img, ul.gallery-4-col img {
 	color: #e1306c;
 }
 .share-post-single .yt {
-	color: #ff0000;
+	color: #DD1919;
 }
 .share-post-single .linked {
 	color: #0077b5;
@@ -4674,8 +4674,8 @@ ul.gallery-2-col img, ul.gallery-3-col img, ul.gallery-4-col img {
 	color: #fff;
 }
 .share-post-single a.yt:hover {
-	background: #ff0000;
-	border-color: #ff0000;
+	background: #DD1919;
+	border-color: #DD1919;
 	color: #fff;
 }
 .share-post-single a.linked:hover {
@@ -7062,5 +7062,5 @@ body{
 	overflow-x: hidden;
 }
 .red{
-	background-color: #8a152e !important;
+	background-color: #DD1919 !important;
 }

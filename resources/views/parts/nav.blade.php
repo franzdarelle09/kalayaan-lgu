@@ -18,7 +18,7 @@
                   <li> <a href="#">News</a></li>
                   <li> <a href="#">Events</a></li>
                   
-                  <li><a href="#">Explore</a></li>
+                  <li><a href="https://www.dropbox.com/sh/titeql60uvwj0u3/AAAgn6egTaJdHMdC_h0n1py7a?dl=0" target="_blank">FULL DISCLOSURE</a></li>
                   <li><a href="#">Contact Us</a></li>
                 
                   

@@ -7,10 +7,10 @@
       </div>
       <!--Item End--> 
       <!--Item Start-->
-      {{-- <div class="item">
+      <div class="item">
      
         <img src="/images/b2.jpg"  alt=""> 
-      </div> --}}
+      </div>
 
       <div class="item">
    

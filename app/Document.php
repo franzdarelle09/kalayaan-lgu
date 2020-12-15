@@ -8,6 +8,6 @@ use App\Documentlist;
 class Document extends Model
 {
     public function documentlist(){
-        return $this->belongsTo(Documentlist::class);
+        return $this->belongsTo(Documentlist::class,'documentlist_id');
     }
 }
