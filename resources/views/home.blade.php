@@ -149,7 +149,7 @@
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -167,7 +167,7 @@
                   <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -185,7 +185,7 @@
                   <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -203,7 +203,7 @@
                   <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -221,7 +221,7 @@
                   <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -501,7 +501,7 @@
                   <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -519,7 +519,7 @@
                   <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -537,7 +537,7 @@
                   <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -555,7 +555,7 @@
                   <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
                         <li> <i class="fas fa-phone"></i> 501 7771</li>
                         <li> <i class="fas fa-fax"></i>501 7771 </li>
@@ -573,7 +573,7 @@
                   <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
                         <li> <i class="far fa-building"></i> Kalayaan Laguna</li>
                         <li> <i class="fas fa-phone"></i> 501-7771</li>
                         <li> <i class="fas fa-fax"></i> 501-7771 </li>
