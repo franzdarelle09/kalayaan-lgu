@@ -96,8 +96,12 @@ class DocumentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete(Request $request)
     {
-        //
+        $id = $request->get('document_id');
+        $d = Document::find($id);
+        unlink(public_path().'/storage/documents/'.$d->filename);
+        $d->delete();
+        return 'success';
     }
 }

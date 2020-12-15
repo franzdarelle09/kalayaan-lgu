@@ -17,7 +17,7 @@
                                 <th>Type</th>
                                 <th>File Url</th>
                                 <th>Date Uploaded</th>
-                                
+                                <th>Action</th>                     
                             </tr>
                         </thead>
                         <tfoot>
@@ -26,7 +26,8 @@
                                 <th>Type</th>
                                 <th>File Url</th>
                                 <th>Date Uploaded</th>
-                            </tr>
+                                <th>Action</th>
+                            </tr> 
                         </tfoot>
                         <tbody>
                             @foreach($documents as $d)
@@ -35,6 +36,7 @@
                                 <td>{{$d->documentlist->title}}</td>
                                 <td><a href="/storage/documents/{{$d->filename}}" target="_blank">{{$d->filename}}</a></td>
                                 <td>{{$d->created_at}}</td>
+                                <td><button class="btn btn-danger delete" data-id="{{$d->id}}">Delete</button></td>
                             </tr>                                                                                   
                             @endforeach
                         </tbody>
@@ -45,4 +47,22 @@
     </div>
 </div>
 
+@endsection
+
+@section('script')
+<script>
+    $(document).ready(function(){
+        $(".delete").on("click", function(){
+            document_id = $(this).data('id');
+            $.ajax({
+                type: 'GET',
+                url: '/administration/documents/delete',
+                data: {document_id: document_id},
+                success: function(d){
+                    window.location.reload();
+                }
+            })
+        })
+    });
+</script>
 @endsection

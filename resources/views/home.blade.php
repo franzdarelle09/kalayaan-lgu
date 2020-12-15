@@ -63,7 +63,7 @@
   <!--Main Content Start-->
   <div class="main-content"> 
     <!--Local Boards & Services-->
-    <section class="wf100 p80">
+    {{-- <section class="wf100 p80">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -242,7 +242,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
     <!--Local Boards & Services End--> 
     <!--Event Festivals & News Articles Start-->
     <section class="wf100 p80 news-event">
@@ -319,9 +319,9 @@
     </section>
     <!--Event Festivals & News Articles End--> 
     <!--Cityscapes & Highlights Start-->
-    <section class="wf100 p80 city-highlights ">
+    <section class="wf100 p80 city-highlights">
       <div class="container">
-        <div class="title-style-1 text-center">
+        <div class="title-style-1 text-center white">
           <h2>Highlights</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo enim, lobortis luctus ante non, malesuada cursus neque.</p>
         </div>
@@ -373,6 +373,18 @@
               <div class="ch-thumb"> <img src="/images/hg4.jpg" alt=""> </div>
               <div class="ch-txt">
                 <h5><a href="#"> Churches </a></h5>
+               
+                <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p>
+              </div>
+            </div>
+          </div>
+          <!--Item End--> 
+          <!--Item Start-->
+          <div class="item">
+            <div class="ch-box">
+              <div class="ch-thumb"> <img src="/images/hg5.jpg" alt=""> </div>
+              <div class="ch-txt">
+                <h5><a href="#"> Food </a></h5>
                
                 <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p>
               </div>
@@ -602,7 +614,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="title-style-1">
+            <div class="title-style-1 white">
               <h2>Facts & Figures</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo enim, lobortis luctus ante non, malesuada cursus neque. </p>
             </div>

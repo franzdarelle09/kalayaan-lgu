@@ -12,6 +12,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/administration/documents/add','DocumentController@create');
     Route::post('/administration/documents/add','DocumentController@store');
     Route::get('/logout', 'UserController@signout');
+    Route::get('/administration/documents/delete','DocumentController@delete');
 });
 
 

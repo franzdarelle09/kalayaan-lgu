@@ -45,5 +45,6 @@
             </div>
         </div>
         @include('admin.parts.scripts')
+        @yield('script')
     </body>
 </html>
