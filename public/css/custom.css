@@ -7082,3 +7082,8 @@ body{
 	border-radius: 3px;
 	padding: 10px;
 }
+@media only screen and (max-width: 769px) {
+	.hide-mobile{
+		display: none;
+	}
+}

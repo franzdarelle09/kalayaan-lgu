@@ -252,10 +252,10 @@
             <div class="col-md-4 col-sm-6">
               <h2>News & Events</h2>
             </div>
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-12">
               <p> </p>
             </div>
-            <div class="col-md-2"> <a href="#">View All</a> </div>
+            <div class="col-md-2 col-sm-12 hide-mobile"> <a href="#">View All</a> </div>
           </div>
         </div>
         <div class="row">
