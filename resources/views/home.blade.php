@@ -253,14 +253,14 @@
               <h2>News & Events</h2>
             </div>
             <div class="col-md-6 col-sm-6">
-              <p>Stay up to date with the current events and news of our beloved hometown. </p>
+              <p> </p>
             </div>
-            <div class="col-md-2"> <a href="#">Add Your Event</a> </div>
+            <div class="col-md-2"> <a href="#">View All</a> </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-4">
-            <div class="latest-updates">
+          <div class="col-md-12 col-sm-12">
+            {{-- <div class="latest-updates">
               <h6>Latest Updates <img src="images/newsicon.png" alt=""> </h6>
               <ul>
                 <li> <strong><a href="#">Praesent pulvinar velit et elit fermentum aliquet.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
@@ -268,38 +268,72 @@
                 <li> <strong><a href="#">Enim non non leo molestie libero sequi tempus orci nibh lacus.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
                 <li> <strong><a href="#">Proposal: How Dispose of illegal Properties in town.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
               </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4"> 
-            <!--News Post Start-->
-            <div class="event-post mb20">
-              <div class="event-post-txt">
-                <h5><a href="#">Exhibition 2020 Program</a></h5>
-                <ul class="event-meta">
-                  <li><i class="far fa-calendar-alt"></i> 21-23 December, 2020</li>
-                  <li><i class="far fa-clock"></i> 09:00am - 06:00pm</li>
-                </ul>
-                <p>Explore art objects from six contemporary artists & designers that focus on function</p>
+            </div> --}}
+            <div class="row news-wrapper news-grid">
+              <!--News Box Start-->
+              <div class="col-md-4 col-sm-6">
+                 <div class="news-box">
+                    <div class="new-thumb">
+                       <span class="cat c1">News</span> <img src="/images/news/3.jpg" alt=""> 
+                    </div>
+                    <div class="new-txt">
+                       <ul class="news-meta">
+                          <li>20 DEC, 2020</li>
+                          <li></li>
+                       </ul>
+                       <h6><a href="#">Year End Tree Planting Activity</a></h6>
+                       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel magna iaculis, pellentesque dui sed, cursus sem. Donec pharetra lacus eu nunc congue, in fermentum magna vestibulum [...] </p>
+                    </div>
+                    <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
+                 </div>
               </div>
-              <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
-            </div>
-            <!--News Post End--> 
-            <!--News Post Start-->
-            <div class="event-post">
-              <div class="event-post-txt">
-                <h5><a href="#">Cras accumsan mauris</a></h5>
-                <ul class="event-meta">
-                  <li><i class="far fa-calendar-alt"></i> 21-23 December, 2020</li>
-                  <li><i class="far fa-clock"></i> 09:00am - 06:00pm</li>
-                </ul>
-                <p>Explore art objects from six contemporary artists & designers that focus on function</p>
+              <!--News Box End--> 
+              <!--News Box Start-->
+              <div class="col-md-4 col-sm-6">
+                <div class="news-box">
+                   <div class="new-thumb">
+                      <span class="cat c2">Event</span> <img src="/images/news/1.jpg" alt=""> 
+                   </div>
+                   <div class="new-txt">
+                      <ul class="news-meta">
+                         <li>20 DEC, 2020</li>
+                         <li></li>
+                      </ul>
+                      <h6><a href="#">Distribution of Free Hybrid Seeds (SL8 and 19) from DA Rice Resiliency Program.</a></h6>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel magna iaculis, pellentesque dui sed, cursus sem. [...]</p>
+                   </div>
+                   <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
+                </div>
+             </div>
+             <!--News Box End--> 
+            
+             <!--News Box Start-->
+             <div class="col-md-4 col-sm-6">
+              <div class="news-box">
+                 <div class="new-thumb">
+                    <span class="cat c1">News</span> <img src="/images/news/2.jpg" alt=""> 
+                 </div>
+                 <div class="new-txt">
+                    <ul class="news-meta">
+                       <li>14 DEC, 2020</li>
+                       <li></li>
+                    </ul>
+                    <h6><a href="#">Photo Copier Ipinamahagi Sa Mga Guro </a></h6>
+                    <p> Pinagkaloob ng ating Pamahalaang Bayan sa pangunguna ng inyong lingkod ang mga Photo Copier na syang higit na makakatulong sa ating mga estudyante [...] </p>
+                 </div>
+                 <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
               </div>
-              <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
-            </div>
-            <!--News Post End--> 
+           </div>
+           <!--News Box End--> 
+
+           
+             
+             
+           </div>
           </div>
-          <div class="col-md-4 col-sm-4"> 
-            <!--News Post Start-->
+          
+          {{-- <div class="col-md-4 col-sm-4"> 
+          
             <div class="event-post">
               <div class="thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/tree2.jpg" alt=""> </div>
               <div class="event-post-txt">
@@ -312,8 +346,8 @@
               </div>
               <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
             </div>
-            <!--News Post End--> 
-          </div>
+             
+          </div> --}}
         </div>
       </div>
     </section>
@@ -413,90 +447,7 @@
         <div class="row">
           <div class="col-md-9">
             <div class="row"> 
-              <!--Department Box Start-->
-              <div class="col-md-4 col-sm-4">
-                <div class="department-box mb30 c1">
-                  <h6>Agriculture & Food</h6>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-circle"></i> Farming Sector</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Agri Industry Development</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Forestry</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Rural Environment</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Food Safety</a></li>
-                  </ul>
-                  <a class="see-more" href="#">See More</a> </div>
-              </div>
-              <!--Department Box End--> 
-              <!--Department Box Start-->
-              <div class="col-md-4 col-sm-4">
-                <div class="department-box mb30 c2">
-                  <h6>Employment Affairs</h6>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-circle"></i> Find Your Job</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Employers & Employment</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Public Service Identity</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Retirements & Older People</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Work Licence Permit</a></li>
-                  </ul>
-                  <a class="see-more" href="#">See More</a> </div>
-              </div>
-              <!--Department Box End--> 
-              <!--Department Box Start-->
-              <div class="col-md-4 col-sm-4">
-                <div class="department-box mb30 c3">
-                  <h6>Housing & Planning</h6>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-circle"></i> Residents & Commercial Areas</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Building Standards</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> National Planning Framework</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Water Filteration Authority</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> State Parks & Developments</a></li>
-                  </ul>
-                  <a class="see-more" href="#">See More</a> </div>
-              </div>
-              <!--Department Box End--> 
-              <!--Department Box Start-->
-              <div class="col-md-4 col-sm-4">
-                <div class="department-box c4">
-                  <h6>Health & Securities</h6>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-circle"></i> Hospitals & Emergencies</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Healty State Life</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Public Safety</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Police Department</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Fire Brigade & Rescue Officials</a></li>
-                  </ul>
-                  <a class="see-more" href="#">See More</a> </div>
-              </div>
-              <!--Department Box End--> 
-              <!--Department Box Start-->
-              <div class="col-md-4 col-sm-4">
-                <div class="department-box c5">
-                  <h6>Laws & Justice</h6>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-circle"></i> Constitution & Bylaws</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Legal Services</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Courts Policy</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Children & Family Cases</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Equality & Integration</a></li>
-                  </ul>
-                  <a class="see-more" href="#">See More</a> </div>
-              </div>
-              <!--Department Box End--> 
-              <!--Department Box Start-->
-              <div class="col-md-4 col-sm-4">
-                <div class="department-box c6">
-                  <h6>Roads & Transport</h6>
-                  <ul>
-                    <li><a href="#"><i class="fas fa-circle"></i> Civil Aviation</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Maritime Services</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Sustainable Transport</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Roads & Directions</a></li>
-                    <li><a href="#"><i class="fas fa-circle"></i> Corporate Information</a></li>
-                  </ul>
-                  <a class="see-more" href="#">See More</a> </div>
-              </div>
-              <!--Department Box End--> 
+              @include('parts.departmentbox')
             </div>
           </div>
           <div class="col-md-3">
@@ -664,90 +615,7 @@
       </div>
     </section>
     <!--Facts About town End--> 
-    <!--town Officials Team Start-->
-    {{-- <section class="wf100 p80-p50 town-team">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-style-1 text-center">
-              <h2>Town Officials Team</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo enim, lobortis luctus ante non, malesuada cursus neque.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="team-box">
-              <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/cteam1.jpg" alt=""></div>
-              <div class="team-txt">
-                <h5>Stephen Paul</h5>
-                <strong class="dep">Assistant Mayor</strong>
-                <p> Stephen Paul is very Compitent and very agile person who assist to Mayor of the Town. </p>
-                <ul class="team-social">
-                  <li><em>Connect:</em></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="team-box">
-              <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/cteam2.jpg" alt=""></div>
-              <div class="team-txt">
-                <h5>Harry Wilson</h5>
-                <strong class="dep">Health Director</strong>
-                <p> Harry Wilson is very Compitent and very agile person who assist to Mayor of the Town. </p>
-                <ul class="team-social">
-                  <li><em>Connect:</em></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="team-box">
-              <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/cteam3.jpg" alt=""></div>
-              <div class="team-txt">
-                <h5>James Scott</h5>
-                <strong class="dep">Marketing Coordinator</strong>
-                <p> James Scott is very Compitent and very agile person who assist to Mayor of the Town. </p>
-                <ul class="team-social">
-                  <li><em>Connect:</em></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="team-box">
-              <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="images/cteam4.jpg" alt=""></div>
-              <div class="team-txt">
-                <h5>Danny Richard</h5>
-                <strong class="dep">Task Force Chief</strong>
-                <p> Danny Richard is very Compitent and very agile person who assist to Mayor of the Town. </p>
-                <ul class="team-social">
-                  <li><em>Connect:</em></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> --}}
-    <!--City Officials Team End--> 
+
   </div>
   <!--Main Content End--> 
   <!--Call 2 Action Start-->
@@ -757,26 +625,7 @@
   @include('parts.footer')
   <!--Footer End-->
   
-  <nav id="sidebar">
-    <div id="dismiss"> <i class="fas fa-arrow-right"></i> </div>
-    <div class="sidebar-header"> <img src="images/footer-logo2.png" alt=""> </div>
-    <ul class="list-unstyled components">
-      <li class="active"> <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-        <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li><a href="index">Default Home Page</a></li>
-          <li><a href="home-two">Home Page Two</a></li>
-          <li><a href="home-three">Home Page Three</a></li>
-        </ul>
-      </li>
-      <li> <a href="aboutus">About Us</a> </li>
-      <li> <a href="departments">Departments</a> </li>
-      <li> <a href="news-full">News</a> </li>
-      <li> <a href="event">Events</a> </li>
-      <li> <a href="explore-city">Explore Town</a> </li>
-      <li> <a href="services">Services</a> </li>
-      <li> <a href="contact">Contact</a> </li>
-    </ul>
-  </nav>
+  @include('parts.sidebar')
   <div class="overlay"></div>
 </div>
 <!--Wrapper End--> 

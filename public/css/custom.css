@@ -3095,8 +3095,8 @@ li.header-weather {
 	opacity: 1;
 }
 .news-box:hover .news-box-f a {
-	background: #d94148;
-	color: #fff;
+	/* background: #d94148;
+	color: #fff; */
 }
 .news-box:hover .new-txt h6 a {
 	color: #d94148;
@@ -7063,4 +7063,22 @@ body{
 }
 .red{
 	background-color: #C10202 !important;
+}
+
+.new-thumb img{
+	min-width: 360px;
+	min-height: 270px;
+}
+.new-txt{
+	min-height: 250px;
+}
+.main-content{
+	min-height: 800px;
+}
+
+.document-table{
+	border: 1px solid #f6f6f6;
+	box-shadow: 0 5px 15px rgba(0,0,0,.07);
+	border-radius: 3px;
+	padding: 10px;
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 15, 2020 at 12:54 AM
+-- Generation Time: Dec 16, 2020 at 02:50 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -29,11 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `documents` (
   `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `filename` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `documentlist_id` bigint(20) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `documents`
+--
+
+INSERT INTO `documents` (`id`, `name`, `filename`, `documentlist_id`, `created_at`, `updated_at`) VALUES
+(4, 'Ordinance 1', '1608011146_github-git-cheat-sheet.pdf', 1, '2020-12-14 21:45:46', '2020-12-14 21:45:46');
 
 -- --------------------------------------------------------
 
@@ -59,8 +67,7 @@ INSERT INTO `document_list` (`id`, `title`, `active`, `created_at`, `updated_at`
 (3, 'Minutes of the Meeting', 1, '2020-12-13 12:34:53', '2020-12-13 12:34:53'),
 (4, 'Agenda', 1, '2020-12-13 12:36:15', '2020-12-13 12:36:15'),
 (5, 'Committee Report', 1, '2020-12-13 12:36:44', '2020-12-13 12:36:44'),
-(6, 'Journal', 1, '2020-12-13 12:37:35', '2020-12-13 12:37:35'),
-(7, 'Others', 1, '2020-12-13 12:38:01', '2020-12-13 12:38:01');
+(6, 'Journal', 1, '2020-12-13 12:37:35', '2020-12-13 12:37:35');
 
 -- --------------------------------------------------------
 
@@ -98,7 +105,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (2, '2019_08_19_000000_create_failed_jobs_table', 1),
 (3, '2020_12_12_220743_create_news_table', 1),
 (4, '2020_12_13_200745_creare_document_list_table', 2),
-(5, '2020_12_13_204127_create_documents_table', 3);
+(5, '2020_12_13_204127_create_documents_table', 3),
+(6, '2020_12_15_032057_add_name_to_documents', 4);
 
 -- --------------------------------------------------------
 
@@ -190,7 +198,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `document_list`
@@ -208,7 +216,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `news`

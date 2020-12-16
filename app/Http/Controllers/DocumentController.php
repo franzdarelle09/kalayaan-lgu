@@ -104,4 +104,15 @@ class DocumentController extends Controller
         $d->delete();
         return 'success';
     }
+
+    public function showDocuments($documentlist_id = null){
+        if(!is_null($documentlist_id)){
+            $documents = Document::where('documentlist_id',$documentlist_id)->orderBy('name')->get();
+            $title = Documentlist::find($documentlist_id)->title;
+        }else{
+            $documents = Document::orderBy('name')->get();
+            $title = 'All Documents';
+        }
+        return view('documents',compact('documents','title'));
+    }
 }
