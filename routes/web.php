@@ -13,9 +13,9 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/administration/documents/add','DocumentController@store');
     Route::get('/logout', 'UserController@signout');
     Route::get('/administration/documents/delete','DocumentController@delete');
-    Route::get('/documents/{documentlist_id?}','DocumentController@showDocuments');
+    
 });
-
+Route::get('/documents/{documentlist_id?}','DocumentController@showDocuments');
 
 Route::get('/login','UserController@login')->name('login');
 Route::post('/login','UserController@checkLogin');
