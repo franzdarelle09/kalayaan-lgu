@@ -68,86 +68,66 @@
            <div class="row">
               <!--Content Col Start-->
               <div class="col-md-9">
-                 <div class="news-box">
-                     <div class="news-body">
-                         <h4 class="news-title">{{$news->title}}</h4>
-                        <?= $news->body ?>
-                     </div>
-                 </div>
+               <div class="news-box">
+                  <div class="new-thumb"> <a href="#"><i class="fas fa-link"></i></a> <span class="cat c4">NEWS</span> <img src="/storage/article_photos/{{$news->article_photo}}" alt=""> </div>
+                  <div class="new-txt">
+                     <ul class="news-meta">
+                        <?php 
+                           $date = date('d M, Y', strtotime($news->created_at));
+                        ?>
+                        <li>{{$date}}</li>
+                        <li>BY: KALAYAAN LGU</li>
+                     </ul>
+                     <h4>{{$news->title}}</h4>
+                     <?= $news->body; ?>
+                     
+                     
+                     <!--Post Tags Start-->
+                     {{-- <div class="single-post-tags"> <a href="#">Health</a> <a href="#">City News</a> <a href="#">Election</a> <a href="#">Campaign</a> <a href="#">Vote</a> <a href="#">Democratic</a> <a href="#">Press</a> </div> --}}
+                     <!--Post Tags End--> 
+                     
+                     
+                    
+                     
+                  </div>
+               </div>
               </div>
               <!--Content Col End--> 
               <!--Sidebar Start-->
               <div class="col-md-3">
                  <div class="sidebar">
                     <!--Widget Start-->
-                    <div class="widget">
+                    {{-- <div class="widget">
                     <h4>About us</h4>
                        <div class="about-widget inner">
                           <img src="images/about-widget-img.jpg" alt="">
                           <p> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment. </p>
                           <a href="#">More About us</a> 
                        </div>
-                    </div>
+                    </div> --}}
                     <!--Widget End--> 
+                    
                     <!--Widget Start-->
                     <div class="widget">
-                     <h4>Recent Posts</h4>
-                       <div class="recent-posts inner">
-                          <ul>
-                             <li>
-                                <img src="images/rp1.jpg" alt=""> <strong>28 August, 2019</strong>
-                                <h6> <a href="#">Fake News may be worrisome, but the </a> </h6>
-                             </li>
-                             <li>
-                                <img src="images/rp2.jpg" alt=""> <strong>28 August, 2019</strong>
-                                <h6> <a href="#">Republic Faces Political Turmoil</a> </h6>
-                             </li>
-                             <li>
-                                <img src="images/rp3.jpg" alt=""> <strong>28 August, 2019</strong>
-                                <h6> <a href="#">Improve Police and Justice System</a> </h6>
-                             </li>
-                          </ul>
-                       </div>
-                    </div>
-                    <!--Widget End--> 
-                    <!--Widget Start-->
-                    <div class="widget">
-                    <h4>Categories</h4>
-                       <div class="categories inner">
-                          <ul>
-                             <li><a href="#">Latest Updates</a></li>
-                             <li><a href="#">Economical Stability</a></li>
-                             <li><a href="#">Educational Institutes</a></li>
-                             <li><a href="#">Speeches &amp; Videos</a></li>
-                             <li><a href="#">Latest Updates</a></li>
-                             <li><a href="#">Foreign Policies</a></li>
-                          </ul>
-                       </div>
-                    </div>
-                    <!--Widget End--> 
-                    <!--Widget Start-->
-                    <div class="widget">
-                    <h4>Upcoming Events</h4>
+                    <h4>Recent News</h4>
                        <div class="upcoming-events inner">
                           
                           <ul>
+                             @foreach($recent_news as $r)
+                             <?php 
+                                 
+                                 $d = date('d',strtotime($r->created_at));
+                                 $m = date('M',strtotime($r->created_at));
+                                 $y = date('Y',strtotime($r->created_at));
+
+                             ?>
                              <li>
-                                <div class="edate"> <strong>30</strong> Sep <span class="year">2019</span> </div>
-                                <h6> <a href="#">Violence against women</a> </h6>
-                                <span class="loc">150 / G iii, Newyork, USA</span> 
+                                <div class="edate"> <strong>{{$d}}</strong> {{$m}} <span class="year">{{$y}}</span> </div>
+                                <h6> <a href="/news/{{$r->slug}}">{{$r->title}}</a> </h6>
+                                {{-- <span class="loc">Kalayaan, Laguna, PH</span>  --}}
                              </li>
-                             <li>
-                                <div class="edate"> <strong>30</strong> Sep <span class="year">2019</span> </div>
-                                <h6> <a href="#">New Year Cultural Festival</a> </h6>
-                                <span class="loc">150 / G iii, Newyork, USA</span> 
-                             </li>
-                             <li>
-                                <div class="edate"> <strong>30</strong> Sep <span class="year">2019</span> </div>
-                                <h6> <a href="#">Corner Meetings for
-                                   Next Elections.</a> 
-                                </h6>
-                                <span class="loc">150 / G iii, Newyork, USA</span> 
-                             </li>
+                             @endforeach
+                         
                           </ul>
                        </div>
                     </div>
@@ -158,12 +138,12 @@
                        <div class="archives inner">
                          
                           <ul>
-                             <li><a href="#">May 2019</a></li>
-                             <li><a href="#">April 2019</a></li>
-                             <li><a href="#">March 2019</a></li>
-                             <li><a href="#">February 2019</a></li>
-                             <li><a href="#">January 2019</a></li>
-                             <li><a href="#">March 2017</a></li>
+                             <li><a href="#">May 2020</a></li>
+                             <li><a href="#">April 2020</a></li>
+                             <li><a href="#">March 2020</a></li>
+                             <li><a href="#">February 2020</a></li>
+                             <li><a href="#">January 2020</a></li>
+                             
                           </ul>
                        </div>
                     </div>
@@ -174,7 +154,7 @@
                      <h4>Tags</h4>
                        <div class="tags-widget inner">
                          
-                          <a href="#">Health</a> <a href="#">City News</a> <a href="#">Vote</a> <a href="#">Election</a> <a href="#">Democratic</a> <a href="#">Press</a> <a href="#">Campaign</a> 
+                          <a href="#">Health</a> <a href="#">Town News</a> <a href="#">COVID-19</a> <a href="#">School</a> <a href="#">Democratic</a> <a href="#">Press</a> <a href="#">Campaign</a> 
                        </div>
                     </div>
                     <!--Widget End--> 

@@ -16,14 +16,22 @@
                         <textarea class="ckeditor form-control" name="wysiwyg-editor"></textarea>
                     </div>
                     
+                    <div class="form-group">
+                        <label class="small mb-1" for="article_photo">Article Photo</label>
+                        <br>
+                        <input type="file" name="article_photo" accept=
+                        "image/*" required>
+                    </div>
+                   <div class="form-group">
+                    <input type="checkbox" value="1" id="custom_thumb"> Custom Thumbnail
+                   </div>
+                    <div class="form-group hide" id="thumb-row">
+                        <label class="small mb-1" for="document_type">Thumbnail (520 pixels x 390 pixels)</label>
+                        <br>
+                        <input type="file" name="thumbnail" accept=
+                        "image/*">
+                    </div>
                    
-                        <div class="form-group">
-                            <label class="small mb-1" for="document_type">Thumbnail (520 pixels x 390 pixels)</label>
-                            <br>
-                            <input type="file" name="thumbnail" accept=
-                            "image/*" required>
-                        </div>
-                    
                     <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                         <span></span>
                         <button class="btn btn-primary" type="submit">Add News</button>
@@ -41,6 +49,14 @@
 <script src="//cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+        $("#custom_thumb").on("click",function(){
+            
+            if ($("#custom_thumb").prop('checked')){           
+                $("#thumb-row").removeClass('hide');
+            }else{
+                $("#thumb-row").addClass('hide');     
+            }
+        });
         $('.ckeditor').ckeditor();
     });
 </script>

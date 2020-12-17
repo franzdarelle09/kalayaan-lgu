@@ -270,62 +270,33 @@
               </ul>
             </div> --}}
             <div class="row news-wrapper news-grid">
+              @foreach($news as $key => $n)
               <!--News Box Start-->
               <div class="col-md-4 col-sm-6">
                  <div class="news-box">
                     <div class="new-thumb">
-                       <span class="cat c1">News</span> <img src="/images/news/3.jpg" alt=""> 
+                       <span class="cat c1">News</span> <img src="/storage/article_photos/thumbnail/{{$n->large_thumb}}" alt=""> 
                     </div>
                     <div class="new-txt">
                        <ul class="news-meta">
-                          <li>20 DEC, 2020</li>
+                          <?php 
+                              $date = date('d M, Y', strtotime($n->created_at));
+                          ?>
+                          <li>{{$date}}</li>
                           <li></li>
                        </ul>
-                       <h6><a href="#">Year End Tree Planting Activity</a></h6>
-                       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel magna iaculis, pellentesque dui sed, cursus sem. Donec pharetra lacus eu nunc congue, in fermentum magna vestibulum [...] </p>
+                       <h6><a href="/news/{{$n->slug}}">{{$n->title}}</a></h6>
+                       <?php 
+                        $teaser = substr(html_entity_decode(strip_tags($n->body)), 0, $sub_count[$key]);
+                       ?>
+                       <p> {{$teaser}} [...] </p>
                     </div>
-                    <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
+                    <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="/news/{{$n->slug}}"><i class="fas fa-arrow-right"></i></a> </div>
                  </div>
               </div>
               <!--News Box End--> 
-              <!--News Box Start-->
-              <div class="col-md-4 col-sm-6">
-                <div class="news-box">
-                   <div class="new-thumb">
-                      <span class="cat c2">Event</span> <img src="/images/news/1.jpg" alt=""> 
-                   </div>
-                   <div class="new-txt">
-                      <ul class="news-meta">
-                         <li>20 DEC, 2020</li>
-                         <li></li>
-                      </ul>
-                      <h6><a href="#">Distribution of Free Hybrid Seeds (SL8 and 19) from DA Rice Resiliency Program.</a></h6>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel magna iaculis, pellentesque dui sed, cursus sem. [...]</p>
-                   </div>
-                   <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
-                </div>
-             </div>
-             <!--News Box End--> 
-            
-             <!--News Box Start-->
-             <div class="col-md-4 col-sm-6">
-              <div class="news-box">
-                 <div class="new-thumb">
-                    <span class="cat c1">News</span> <img src="/images/news/2.jpg" alt=""> 
-                 </div>
-                 <div class="new-txt">
-                    <ul class="news-meta">
-                       <li>14 DEC, 2020</li>
-                       <li></li>
-                    </ul>
-                    <h6><a href="#">Photo Copier Ipinamahagi Sa Mga Guro </a></h6>
-                    <p> Pinagkaloob ng ating Pamahalaang Bayan sa pangunguna ng inyong lingkod ang mga Photo Copier na syang higit na makakatulong sa ating mga estudyante [...] </p>
-                 </div>
-                 <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
-              </div>
-           </div>
-           <!--News Box End--> 
-
+              @endforeach
+              
            
              
              
@@ -357,7 +328,7 @@
       <div class="container">
         <div class="title-style-1 text-center white">
           <h2>Highlights</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo enim, lobortis luctus ante non, malesuada cursus neque.</p>
+          <p>Experience rural living, enjoy it's culture and explore the wonders of Kalayaan.</p>
         </div>
       </div>
       <div class="container-fluid">
