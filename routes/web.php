@@ -15,11 +15,15 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/administration/documents/delete','DocumentController@delete');
     Route::get('/administration/news','NewsController@index');    
     Route::get('/administration/news/add','NewsController@create');    
+    Route::get('/administration/news/edit/{id}','NewsController@edit');    
     Route::post('/administration/news/add','NewsController@store');    
+    Route::post('/administration/news/edit','NewsController@update');    
+    Route::get('/administration/news/delete','NewsController@delete');    
     Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
 });
 Route::get('/documents/{documentlist_id?}','DocumentController@showDocuments');
 Route::get('/news/{slug}','NewsController@newsDetails');
-
+Route::get('/news-list/','NewsController@newsList');
+Route::get('/officials','HomeController@officials');
 Route::get('/login','UserController@login')->name('login');
 Route::post('/login','UserController@checkLogin');

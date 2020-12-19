@@ -80,15 +80,7 @@
                         </div>
                     
                             
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table mr-1"></i>
-                                DataTable Example
-                            </div>
-                            <div class="card-body">
-                               @include('admin.parts.table')
-                            </div>
-                        </div>
+                        
                     </div>
                 </main>
                 @include('admin.parts.footer')

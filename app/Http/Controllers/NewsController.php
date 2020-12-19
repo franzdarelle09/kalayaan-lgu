@@ -6,8 +6,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\News;
 use Image;
+use Illuminate\Support\Facades\DB;
 class NewsController extends Controller
 {
+
+    public function index(){
+        $news = News::orderBy('id','desc')->get();
+        return view('admin.news',compact('news'));
+    }
+
     public function create(){
         return view('admin.news_create');
     }
@@ -20,11 +27,14 @@ class NewsController extends Controller
             $extension = $request->file('thumbnail')->guessClientExtension();
             $fileNameToStore_o = time().'_'.$filename.'.'.$extension;
             $path = $request->file('thumbnail')->storeAs('public/article_photos/thumbnail',$fileNameToStore_o);
+            $thumbnail_status = 1;
         }else{
             $fileNameToStore_o = '';
+            $thumbnail_status = 0;
         }
 
         if($request->hasFile('article_photo')) {
+            $article_photo_status = 1;
             //get filename with extension
             $filenamewithextension = $request->file('article_photo')->getClientOriginalName();
       
@@ -65,15 +75,34 @@ class NewsController extends Controller
             $this->createThumbnail($largethumbnailpath, 520, 390);
       
             // return redirect('image')->with('success', "Image uploaded successfully.");
+        }else{
+            $article_photo_status = 0;
         }
 
         $news = ($request->input('news_id') !== NULL)  ? News::findOrFail($request->news_id) : new News;
         $news->title = $request->input('title');
-        $news->thumbnail = $fileNameToStore_o;
-        $news->article_photo = $filenametostore;
-        $news->small_thumb = $smallthumbnail;
-        $news->medium_thumb = $mediumthumbnail;
-        $news->large_thumb = $largethumbnail;
+        if($thumbnail_status == 1){
+            if(file_exists("/storage/article_photos/$news->thumbnail") && $news->thumbnail != ""){
+                unlink("/storage/article_photos/$news->thumbnail");
+            }
+            $news->thumbnail = $fileNameToStore_o;
+        }
+        if ($article_photo_status == 1) {
+            
+            if(file_exists(public_path()."/storage/article_photos/".$news->article_photo) && $news->article_photo != ""){
+                unlink(public_path()."/storage/article_photos/$news->article_photo");
+                
+            }
+            if(file_exists(public_path()."/storage/article_photos/thumbnail/$news->small_thumb") && $news->small_thumb != ""){
+                unlink(public_path()."/storage/article_photos/thumbnail/$news->small_thumb");
+                unlink(public_path()."/storage/article_photos/thumbnail/$news->medium_thumb");
+                unlink(public_path()."/storage/article_photos/thumbnail/$news->large_thumb");
+            }
+            $news->article_photo = $filenametostore;
+            $news->small_thumb = $smallthumbnail;
+            $news->medium_thumb = $mediumthumbnail;
+            $news->large_thumb = $largethumbnail;
+        }
         $news->body = $request->input('wysiwyg-editor');
         $news->slug = Str::slug($request->input('title').' '.time(), '-');
         $news->save();
@@ -93,6 +122,29 @@ class NewsController extends Controller
         $news = News::whereSlug($slug)->first();
         $recent_news = News::where('slug','!=',$slug)->orderBy('id','desc')->take(5)->get();
         return view('news',compact('news','recent_news'));
+    }
+
+    public function newsList(){
+        $news = News::orderBy('id','desc')->paginate(4);
+        return view('news_list',compact('news'));
+    }
+
+    public function delete(Request $request)
+    {
+        $id = $request->get('news_id');
+        $n = News::find($id);
+        unlink(public_path().'/storage/article_photos/'.$n->article_photo);
+        unlink(public_path().'/storage/article_photos/thumbnail/'.$n->small_thumb);
+        unlink(public_path().'/storage/article_photos/thumbnail/'.$n->medium_thumb);
+        unlink(public_path().'/storage/article_photos/thumbnail/'.$n->large_thumb);
+        
+        $n->delete();
+        return 'success';
+    }
+
+    public function edit($id){
+        $n = News::find($id);
+        return view('admin.news_edit',compact('n'));
     }
 
 }

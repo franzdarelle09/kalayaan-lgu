@@ -6,8 +6,8 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                   <li> <a href="/">Home</a></li>
-                  <li> <a href="#">About Us</a></li>
-                  <li> <a href="#">Officials</a></li>
+                  <li> <a href="/about-us">About Us</a></li>
+                  <li> <a href="/officials">Officials</a></li>
                   <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documents <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <?php
@@ -18,8 +18,8 @@
                       @endforeach
                     </ul>
                   </li>
-                  <li> <a href="#">News</a></li>
-                  <li> <a href="#">Events</a></li>
+                  <li> <a href="/news-list">News</a></li>
+                  
                   
                   <li><a href="https://www.dropbox.com/sh/titeql60uvwj0u3/AAAgn6egTaJdHMdC_h0n1py7a?dl=0" target="_blank">FULL DISCLOSURE</a></li>
                   <li><a href="#">Contact Us</a></li>

@@ -31,6 +31,10 @@ class HomeController extends Controller
         }
     }
 
+    public function officials(){
+        return view('officials');
+    }
+
     public function test(){
         // $user = new User();
         // $user->password = Hash::make('kalayaan4015');

@@ -7069,6 +7069,12 @@ body{
 	min-width: 360px;
 	min-height: 270px;
 }
+
+.new-thumb:hover{
+	transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+}
+
 .new-txt{
 	min-height: 250px;
 }
