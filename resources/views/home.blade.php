@@ -30,10 +30,10 @@
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <ul class="left-links">
-              <li> <a href="#">Council</a> </li>
+              <li> <a href="/officials">Council</a> </li>
               <li> <a href="#">Vacancies</a> </li>
               <li> <a href="#">Report It</a> </li>
-              <li> <a href="#">A-Z Index</a> </li>
+           
             </ul>
           </div>
           <div class="col-md-6 col-sm-6">
@@ -255,7 +255,7 @@
             <div class="col-md-6 col-sm-12">
               <p> </p>
             </div>
-            <div class="col-md-2 col-sm-12 hide-mobile"> <a href="#">View All</a> </div>
+            <div class="col-md-2 col-sm-12 hide-mobile"> <a href="/news-list">View All</a> </div>
           </div>
         </div>
         <div class="row">

@@ -84,15 +84,7 @@
                                               
                                     </tr>
                                 </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Type</th>
-                                        <th>File Url</th>
-                                        <th>Date Uploaded</th>
-                                       
-                                    </tr> 
-                                </tfoot>
+                               
                                 <tbody>
                                     @foreach($documents as $d)
                                     <tr>

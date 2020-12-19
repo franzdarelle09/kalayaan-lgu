@@ -64,15 +64,11 @@
   <div class="main-content"> 
     <div class="team-grid official-members">
         <div class="container">
-            <div class="title-style-1 text-center">
-                <h2>Elected Officials</h2>
-                
-              </div>
-           <div class="row justify-content-md-center margin-official">
-             
-              <div class="col col-md-3 col-md-offset-3 col-sm-12" style="display: flex;">
+           <div class="row margin-official">
+              <!--Team Box Start-->
+              <div class="col-md-12 col-sm-6" style="display: flex;">
                  <div class="team-box">
-                    <div class="team-thumb">  <img src="/images/officials/mayor.jpg" alt=""></div>
+                    <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/mayor.jpg" alt=""></div>
                     <div class="team-txt">
                        <h5>Sandy Laganapan</h5>
                        <strong class="dep">Town Mayor</strong>
@@ -80,37 +76,41 @@
                        <ul class="team-social">
                           <li><em>Connect:</em></li>
                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                          <li><a href="https://web.facebook.com/sandy.laganapan.3" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                          
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                        </ul>
                     </div>
                  </div>
               </div>
-              <div class="col col-md-3 col-sm-12" style="display: flex;">
-                <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/vm.jpg" alt=""></div>
-                   <div class="team-txt">
-                      <h5>Kenneth<br>Ragaza</h5>
-                      <strong class="dep">Town Vice Mayor</strong>
-                      
-                      <ul class="team-social">
-                         <li><em>Connect:</em></li>
-                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/vicemayorkenneth.ragaza.1" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
-                         
-                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
+              <!--Team Box End-->           
            </div>
-          
            <div class="row margin-official">
             <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-12 col-sm-6" style="display: flex;">
                <div class="team-box">
-                  <div class="team-thumb">  <img src="/images/officials/1.jpg" alt=""></div>
+                  <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/vm.jpg" alt=""></div>
+                  <div class="team-txt">
+                     <h5>Kenneth Ragaza</h5>
+                     <strong class="dep">Town Vice Mayor</strong>
+                     
+                     <ul class="team-social">
+                        <li><em>Connect:</em></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!--Team Box End-->          
+           </div>
+           <div class="row margin-official">
+            <!--Team Box Start-->
+            <div class="col-md-3 col-sm-6">
+               <div class="team-box">
+                  <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/1.jpg" alt=""></div>
                   <div class="team-txt">
                      <h5>Darwin<br> Ponce</h5>
                      <strong class="dep">Town Councilor</strong>
@@ -118,8 +118,8 @@
                      <ul class="team-social">
                         <li><em>Connect:</em></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank><i class="fab fa-facebook-f"></i></a></li>
-                        
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                      </ul>
                   </div>
@@ -127,9 +127,9 @@
             </div>
             <!--Team Box End-->          
             <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/2.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/2.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>Christoper Ramiro</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -137,8 +137,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/christopher.ramiro.12" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -146,9 +146,9 @@
             </div>
              <!--Team Box End-->   
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/3.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/3.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>RUSSEL LAGANAS</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -156,8 +156,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/russel.laganas" target="_blank" ><i class="fab fa-facebook-f" ></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -166,9 +166,9 @@
              <!--Team Box End-->         
 
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/4.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/4.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>Marian<br>Erufino</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -176,8 +176,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/marian.erufino.10" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -185,9 +185,9 @@
              </div>
              <!--Team Box End-->  
                <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/5.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/5.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>marlon<br>laganas</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -195,8 +195,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/migzmarlon.laganas" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -204,9 +204,9 @@
              </div>
              <!--Team Box End-->         
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/6.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/6.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>Veelly James<br>Cabamalan</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -214,8 +214,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/veellyjhames.cabamalan" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -223,9 +223,9 @@
              </div>
              <!--Team Box End-->  
             <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/7.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/7.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>jayson<br>blanco</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -233,8 +233,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/konjayson.blanco" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -242,9 +242,9 @@
              </div>
              <!--Team Box End--> 
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/8.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/8.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>marty<br>sasondoncillo</h5>
                       <strong class="dep">Town Councilor</strong>
@@ -252,8 +252,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/marty.sasondoncillo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -261,9 +261,9 @@
              </div>
              <!--Team Box End-->           
                    <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12 col-md-offset-3" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/kap.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/kap.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>Dominic<br>Ragas</h5>
                       <strong class="dep">ABC President</strong>
@@ -271,8 +271,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="#" target="_blank><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
@@ -280,9 +280,9 @@
              </div>
              <!--Team Box End-->         
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-6">
                 <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/sk.jpg" alt=""></div>
+                   <div class="team-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/officials/sk.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>Lei<br>Abrillo</h5>
                       <strong class="dep">SK Federation President</strong>
@@ -290,8 +290,8 @@
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/leighlanie.abrillo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                         
+                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                       </ul>
                    </div>
