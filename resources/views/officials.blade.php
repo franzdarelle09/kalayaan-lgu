@@ -74,7 +74,7 @@
                  <div class="team-box">
                     <div class="team-thumb">  <img src="/images/officials/mayor.jpg" alt=""></div>
                     <div class="team-txt">
-                       <h5>Sandy Laganapan</h5>
+                       <h5>HON. Sandy Laganapan</h5>
                        <strong class="dep">Town Mayor</strong>
                        
                        <ul class="team-social">
@@ -91,7 +91,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/vm.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>Kenneth<br>Ragaza</h5>
+                      <h5>HON. Kenneth<br>Ragaza</h5>
                       <strong class="dep">Town Vice Mayor</strong>
                       
                       <ul class="team-social">
@@ -112,7 +112,7 @@
                <div class="team-box">
                   <div class="team-thumb">  <img src="/images/officials/1.jpg" alt=""></div>
                   <div class="team-txt">
-                     <h5>Darwin<br> Ponce</h5>
+                     <h5>hon. Darwin<br> Ponce<br><span style="visibility: hidden;">filler</span></h5>
                      <strong class="dep">Town Councilor</strong>
                      
                      <ul class="team-social">
@@ -131,7 +131,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/2.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>Christoper Ramiro</h5>
+                      <h5>HON. Christoper Ramiro</h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -150,7 +150,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/3.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>RUSSEL LAGANAS</h5>
+                      <h5>HON. RUSSEL<br> LAGANAS<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -170,7 +170,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/4.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>Marian<br>Erufino</h5>
+                      <h5>HON. Marian<br>Erufino<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -189,7 +189,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/5.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>marlon<br>laganas</h5>
+                      <h5>HON. marlon<br>laganas<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -208,7 +208,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/6.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>Veelly James<br>Cabamalan</h5>
+                      <h5>HON. Veelly James<br>Cabamalan</h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -227,7 +227,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/7.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>jayson<br>blanco</h5>
+                      <h5>HON. jayson<br>blanco<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -246,7 +246,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/8.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>marty<br>sasondoncillo</h5>
+                      <h5>HON. marty<br>sasondoncillo<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">Town Councilor</strong>
                       
                       <ul class="team-social">
@@ -265,7 +265,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/kap.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>Dominic<br>Ragas</h5>
+                      <h5>HON. Dominic<br>Ragas<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">ABC President</strong>
                       
                       <ul class="team-social">
@@ -284,7 +284,7 @@
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/sk.jpg" alt=""></div>
                    <div class="team-txt">
-                      <h5>Lei<br>Abrillo</h5>
+                      <h5>HON. Lei<br>Abrillo<br><span style="visibility: hidden;">filler</span></h5>
                       <strong class="dep">SK Federation President</strong>
                       
                       <ul class="team-social">
