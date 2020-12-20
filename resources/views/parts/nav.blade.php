@@ -13,8 +13,8 @@
                       <?php
                         $menu_docs = App\Documentlist::whereActive(1)->orderBy('title')->get();
                       ?>
-                      @foreach($menu_docs as $m)
                       <li><a href="/documents">All Documents</a></li>
+                      @foreach($menu_docs as $m)
                       <li><a href="/documents/{{$m->id}}">{{$m->title}}</a></li>
                       @endforeach
                     </ul>

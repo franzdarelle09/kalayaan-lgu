@@ -20,6 +20,8 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/administration/news/edit','NewsController@update');    
     Route::get('/administration/news/delete','NewsController@delete');    
     Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
+
+    Route::get('/administration/departments/update-content/{id?}','DepartmentController@updateContent');
 });
 
 Route::get('/login','UserController@login')->name('login');

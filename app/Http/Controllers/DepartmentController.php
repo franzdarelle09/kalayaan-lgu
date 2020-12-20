@@ -82,4 +82,8 @@ class DepartmentController extends Controller
     {
         //
     }
+
+    public function updateContent($id = 0){
+        return view('admin.department',compact('id'));
+    }
 }

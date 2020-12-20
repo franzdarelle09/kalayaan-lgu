@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Department;
 use App\Documentlist;
 use Illuminate\Http\Request;
 use App\User;
 use App\News;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 class HomeController extends Controller
 {
     public function index(){
@@ -47,7 +48,35 @@ class HomeController extends Controller
         // $user->save();
 
         
+        $departments = [
+            "Municipal Mayor's Office",
+            "Municipal Vice Mayor's Office",
+            "Sangguniang Bayan Office",
+            "Secretary to the Sanggunian Office",
+            "Municipal Human Resource Management and Development Office",
+            "MUNICIPAL PLANNING AND DEVELOPMENT OFFICE",
+            "Municipal Budget Office",
+            "Municipal Treasurer's Office",
+            "Municipal Engineering Office",
+            "Municipal Social Welfare and Development Office",
+            "Municipal Accounting Office",
+            "Municipal Civil Registrar Office",
+            "Municipal Assessor's Office",
+            "Municipal Health Office",
+            "Municipal Agriculture Office",
+            "General Services Office",
+            "Municipal Nutrition Action Office",
+            "Municipal Disaster Risk Reduction Management Office",
+            "Municipal Economic Enterprise Development Office"
+        ];
 
+        // foreach($departments as $d){
+        //     $dep = new Department;
+        //     $dep->name = $d;
+        //     $dep->slug = Str::slug($d);
+        //     $dep->acronym = '';
+        //     $dep->save();
+        // }
         
     }
 }
