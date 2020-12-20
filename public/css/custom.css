@@ -2400,7 +2400,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 /*** + === + City Official Members Start + === + ***/
 .official-members {
-	background: #fff;
+	background: #f7f7f7;
 }
 .official-members .team-box {
 	margin: 0px;
