@@ -61,8 +61,8 @@
 
   <!--Slider End--> 
   <!--Main Content Start-->
-  <div class="main-content"> 
-    <div class="team-grid official-members" style="background:#f7f7f7 !important;">
+  <div class="main-content favorite-bg"> 
+    <div class="team-grid official-members ">
         <div class="container">
             <div class="title-style-1 text-center" style="margin-top: 50px;">
                 <h2>Elected Officials</h2>

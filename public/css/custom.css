@@ -7163,6 +7163,10 @@ body{
     transition: .3s ease-in-out;
 }
 
+.favorite-bg{
+	background: url(../images/newsbg.jpg) no-repeat;
+  	background-size: cover;
+}
 
 @media only screen and (max-width: 769px) {
 	.hide-mobile{
