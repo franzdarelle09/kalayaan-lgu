@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Department;
+use App\Member;
 use Illuminate\Http\Request;
 
 class DepartmentController extends Controller
@@ -12,9 +13,17 @@ class DepartmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request, $slug)
     {
-        //
+        $department = Department::whereSlug($slug)->first();
+        return view('department-details',compact('department'));
+    }
+
+    public function members($slug)
+    {
+        $department = Department::whereSlug($slug)->first();
+        $members = Member::where('department_id',$department->id)->get();
+        return view('department-members',compact('department','members'));
     }
 
     /**
@@ -35,7 +44,10 @@ class DepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $department = Department::find($request->input('department_id'));
+        $department->contents = $request->input('wysiwyg-editor');
+        $department->save();
+        return redirect('/administration/departments/'.$department->id);
     }
 
     /**
@@ -84,6 +96,14 @@ class DepartmentController extends Controller
     }
 
     public function updateContent($id = 0){
-        return view('admin.department',compact('id'));
+        $departments = Department::orderBy('name','asc')->get();
+        $dep = ($id == 0) ? null : Department::find($id);
+        return view('admin.department',compact('id','departments','dep'));
+    }
+
+    public function updateMember($id = 0){
+        $departments = Department::orderBy('name','asc')->get();
+        $dep = ($id == 0) ? null : Department::find($id);
+        return view('admin.department-members',compact('id','departments','dep'));
     }
 }

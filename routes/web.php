@@ -21,7 +21,10 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/administration/news/delete','NewsController@delete');    
     Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');
 
-    Route::get('/administration/departments/update-content/{id?}','DepartmentController@updateContent');
+    Route::get('/administration/departments/{id?}','DepartmentController@updateContent');
+    Route::post('/administration/departments','DepartmentController@store');
+    Route::get('/administration/departments/members/{id?}','DepartmentController@updateMember');
+
 });
 
 Route::get('/login','UserController@login')->name('login');
@@ -32,4 +35,7 @@ Route::get('/news/{slug}','NewsController@newsDetails');
 Route::get('/news-list/','NewsController@newsList');
 Route::get('/officials','HomeController@officials');
 Route::get('/about-us','HomeController@about');
-Route::get('/departments/{slug}','DepartmentController@index');
+Route::get('/department/{slug}','DepartmentController@index');
+Route::get('/department/{slug}/members','DepartmentController@members');
+Route::get('/department/{slug}/services','DepartmentController@services');
+Route::get('/department/{slug}/forms','DepartmentController@forms');

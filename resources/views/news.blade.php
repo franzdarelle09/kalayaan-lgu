@@ -68,7 +68,7 @@
            <div class="row">
               <!--Content Col Start-->
               <div class="col-md-9">
-               <div class="news-box">
+               <div class="news-box" style="display: flex; flex-direction: column;">
                   <div class="new-thumb"> <a href="#"><i class="fas fa-link"></i></a> <span class="cat c4">NEWS</span> <img src="/storage/article_photos/{{$news->article_photo}}" alt=""> </div>
                   <div class="new-txt">
                      <ul class="news-meta">

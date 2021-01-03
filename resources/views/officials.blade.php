@@ -69,46 +69,50 @@
                 
               </div>
            <div class="row justify-content-md-center margin-official">
-             
-              <div class="col col-md-3 col-md-offset-3 col-sm-12" style="display: flex;">
-                 <div class="team-box">
-                    <div class="team-thumb">  <img src="/images/officials/mayor.jpg" alt=""></div>
-                    <div class="team-txt">
-                       <h5>HON. Sandy Laganapan</h5>
-                       <strong class="dep">Town Mayor</strong>
-                       
-                       <ul class="team-social">
-                          <li><em>Connect:</em></li>
-                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                          <li><a href="https://web.facebook.com/sandy.laganapan.3" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                          
-                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                       </ul>
-                    </div>
-                 </div>
+              <div class="col col-md-12 col-sm-12" style="display: flex; margin-bottom:20px;">
+               
+                  <div class="team-box">
+                     <div class="team-thumb">  <img src="/images/officials/mayor.jpg" alt=""></div>
+                     <div class="team-txt">
+                        <h5>HON. Sandy Laganapan</h5>
+                        <strong class="dep">Town Mayor</strong>
+                        
+                        <ul class="team-social">
+                           <li><em>Connect:</em></li>
+                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                           <li><a href="https://web.facebook.com/sandy.laganapan.3" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                           
+                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               
               </div>
-              <div class="col col-md-3 col-sm-12" style="display: flex;">
-                <div class="team-box">
-                   <div class="team-thumb">  <img src="/images/officials/vm.jpg" alt=""></div>
-                   <div class="team-txt">
-                      <h5>HON. Kenneth<br>Ragaza</h5>
-                      <strong class="dep">Town Vice Mayor</strong>
-                      
-                      <ul class="team-social">
-                         <li><em>Connect:</em></li>
-                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                         <li><a href="https://web.facebook.com/vicemayorkenneth.ragaza.1" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
-                         
-                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
+             
+              <div class="col col-md-12 col-sm-12" style="display: flex; margin-bottom:20px;">
+               <div class="team-box">
+                  <div class="team-thumb">  <img src="/images/officials/vm.jpg" alt=""></div>
+                  <div class="team-txt">
+                     <h5>HON. Kenneth<br>Ragaza</h5>
+                     <strong class="dep">Town Vice Mayor</strong>
+                     
+                     <ul class="team-social">
+                        <li><em>Connect:</em></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://web.facebook.com/vicemayorkenneth.ragaza.1" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
+                        
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+              </div>
+
+              
            </div>
           
            <div class="row margin-official">
             <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                <div class="team-box">
                   <div class="team-thumb">  <img src="/images/officials/1.jpg" alt=""></div>
                   <div class="team-txt">
@@ -127,7 +131,7 @@
             </div>
             <!--Team Box End-->          
             <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/2.jpg" alt=""></div>
                    <div class="team-txt">
@@ -146,7 +150,7 @@
             </div>
              <!--Team Box End-->   
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/3.jpg" alt=""></div>
                    <div class="team-txt">
@@ -166,7 +170,7 @@
              <!--Team Box End-->         
 
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/4.jpg" alt=""></div>
                    <div class="team-txt">
@@ -185,7 +189,7 @@
              </div>
              <!--Team Box End-->  
                <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/5.jpg" alt=""></div>
                    <div class="team-txt">
@@ -204,7 +208,7 @@
              </div>
              <!--Team Box End-->         
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/6.jpg" alt=""></div>
                    <div class="team-txt">
@@ -223,7 +227,7 @@
              </div>
              <!--Team Box End-->  
             <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/7.jpg" alt=""></div>
                    <div class="team-txt">
@@ -242,7 +246,7 @@
              </div>
              <!--Team Box End--> 
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/8.jpg" alt=""></div>
                    <div class="team-txt">
@@ -261,7 +265,7 @@
              </div>
              <!--Team Box End-->           
                    <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12 col-md-offset-3" style="display: flex;">
+            <div class="col-md-3 col-sm-12 col-md-offset-3" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/kap.jpg" alt=""></div>
                    <div class="team-txt">
@@ -280,7 +284,7 @@
              </div>
              <!--Team Box End-->         
              <!--Team Box Start-->
-            <div class="col-md-3 col-sm-12" style="display: flex;">
+            <div class="col-md-3 col-sm-12" style="display: flex; margin-bottom:20px;">
                 <div class="team-box">
                    <div class="team-thumb">  <img src="/images/officials/sk.jpg" alt=""></div>
                    <div class="team-txt">
