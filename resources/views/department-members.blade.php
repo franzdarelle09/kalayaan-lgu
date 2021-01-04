@@ -69,10 +69,10 @@
                <!--Department Details Txt Start-->
                <div class="deprt-txt">
                 <h3>{{$department->name}} Members</h3>
-                <div class="member">
+                {{-- <div class="member">
                     <h4>Cecilia Flores</h4>
                     <p>MNAO</p>
-                </div>
+                </div> --}}
 
                 
                   
