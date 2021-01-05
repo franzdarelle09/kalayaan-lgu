@@ -343,7 +343,7 @@
                   <li><a href="#"><i class="far fa-image"></i> 48 Photos</a></li>
                   <li><a href="#"><i class="fas fa-play-circle"></i> 21 Videos</a></li>
                 </ul> --}}
-                <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p>
+                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p> --}}
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@
               <div class="ch-txt">
                 <h5><a href="#">Twin Falls</a></h5>
               
-                <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p>
+                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p> --}}
               </div>
             </div>
           </div>
@@ -367,7 +367,7 @@
               <div class="ch-txt">
                 <h5><a href="#">CBK Powerplant</a></h5>
                 
-                <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p>
+                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p> --}}
               </div>
             </div>
           </div>
@@ -379,7 +379,7 @@
               <div class="ch-txt">
                 <h5><a href="#"> Churches </a></h5>
                
-                <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p>
+                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p> --}}
               </div>
             </div>
           </div>
