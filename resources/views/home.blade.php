@@ -391,7 +391,7 @@
               <div class="ch-txt">
                 <h5><a href="#"> Food </a></h5>
                
-                <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p>
+                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p> --}}
               </div>
             </div>
           </div>
