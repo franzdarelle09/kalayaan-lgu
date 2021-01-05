@@ -110,9 +110,15 @@ class DepartmentController extends Controller
 
     public function storeMember(Request $request){
         $names = $request->input('name');
-        $position = $request->input('position');
+        $positions = $request->input('position');
         $mem_delete = Member::whereDepartmentId($request->input('department_id'))->delete();
         
+        foreach($names as $key => $n){
+            $member = New Member;
+            $member->name = $n;
+            $member->positon = $positions[$key];
+            $member->save();
+        }
 
 
     }

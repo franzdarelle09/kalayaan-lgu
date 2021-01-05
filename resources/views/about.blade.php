@@ -69,10 +69,17 @@
                  <!--Department Details Txt Start-->
                  <div class="deprt-txt text-center" style="max-width: 800px; margin: auto;">
                     <h3>MISSION</h3>
-                    <h6 style="font-size:28px; margin-bottom: 100px;">To provide maximum services through people empowerment and in partnership with agencies, private sectors and other civic societies.</h6>
+                    <h6 style="font-size:28px; margin-bottom: 30px;">To provide maximum services through people empowerment and in partnership with other agencies, private sectors and other civic societies, steer social, economic, infrastructure development having deep awareness on environmental sustainability towards a disaster-resilient community.
+                    </h6>
+                    <h6 style="font-size:28px; margin-bottom: 100px; font-style: italic;">
+                      (Makapagbigay ng pinakamataas na antas ng paglilingkod sa pamamagitan ng pagbibigay tinig sa mga mamamayan at sa pakikipagkaisa sa iba’t ibang  ahensiya ng pamahalaan, pribadong sector at iba pang pambayang samahan, umugit ng kaunlarang panlipunan, ekonomiya, imprastraktura na patuloy na napananatili ang malinis at magandang kalikasan tungo sa pamayanang ligtas sa kapahamakan.)
+                    </h6>
+                    
                     
                     <h3>VISION</h3>
-                    <h6 style="font-size:28px; margin-bottom: 50px;">A well developed agricultural community of peaceful, God-loving, healthy and united citizenry.</h6>
+                    <h6 style="font-size:28px; margin-bottom: 30px;">A well-developed, agricultural and environment - friendly community of peaceful, God-loving, healthy and united citizenry.</h6>
+                    <h6 style="font-size:28px; margin-bottom: 50px; font-style: italic;">(Isang maunlad na agrikultura at makakalikasang komunidad na may mapayapa, maka-Diyos, malusog at nagkakaisang mamamayan.)</h6>
+                    
                  </div>
                  <!--Department Details Txt End--> 
                  

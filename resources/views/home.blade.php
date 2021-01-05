@@ -445,24 +445,7 @@
                   </div>
                 </div>
                 <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading2">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2"> Town Council </a> </h6>
-                  </div>
-                  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
+                
                 <!--Panel Start-->
                 <div class="panel">
                   <div class="panel-heading" role="tab" id="heading3">
@@ -471,11 +454,27 @@
                   <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> PNP</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
+                        <li> <i class="fas fa-phone"></i> 523-1815</li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--Panel End--> 
+                <!--Panel Start-->
+                <div class="panel">
+                  <div class="panel-heading" role="tab" id="heading31">
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse31" aria-expanded="true" aria-controls="collapse31"> Fire Rescue </a> </h6>
+                  </div>
+                  <div id="collapse31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading31">
+                    <div class="panel-body">
+                      <ul>
+                        <li> <i class="fas fa-user-tie"></i> BFP</li>
+                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
+                        <li> <i class="fas fa-phone"></i> 523-3752</li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -484,16 +483,15 @@
                 <!--Panel Start-->
                 <div class="panel">
                   <div class="panel-heading" role="tab" id="heading4">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4"> Ambulance </a> </h6>
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4"> Health </a> </h6>
                   </div>
                   <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
+                        <li> <i class="fas fa-user-tie"></i> MHO</li>
                         <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
+                        <li> <i class="fas fa-phone"></i> 0933 347 5786</li>
+                        <li> <i class="fas fa-fax"></i>501 7753 </li>
                       </ul>
                     </div>
                   </div>
@@ -502,16 +500,43 @@
                 <!--Panel Start-->
                 <div class="panel">
                   <div class="panel-heading" role="tab" id="heading5">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5"> E-Services </a> </h6>
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5"> BRGY. SAN JUAN </a> </h6>
                   </div>
                   <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i> Kalayaan Laguna</li>
-                        <li> <i class="fas fa-phone"></i> 501-7771</li>
-                        <li> <i class="fas fa-fax"></i> 501-7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
+                        <li> <i class="fas fa-user-tie"></i> BRGY. SAN JUAN</li>
+                        <li> <i class="fas fa-phone"></i> 0917 682 1149</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--Panel End--> 
+                <!--Panel Start-->
+                <div class="panel">
+                  <div class="panel-heading" role="tab" id="heading6">
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6"> BRGY. LONGOS </a> </h6>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                    <div class="panel-body">
+                      <ul>
+                        <li> <i class="fas fa-user-tie"></i> BRGY. LONGOS</li>
+                        <li> <i class="fas fa-phone"></i> 523-9097</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--Panel End--> 
+                <!--Panel Start-->
+                <div class="panel">
+                  <div class="panel-heading" role="tab" id="heading7">
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7"> BRGY. SAN ANTONIO </a> </h6>
+                  </div>
+                  <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                    <div class="panel-body">
+                      <ul>
+                        <li> <i class="fas fa-user-tie"></i> BRGY. SAN ANTONIO</li>
+                        <li> <i class="fas fa-phone"></i> N/A</li>
                       </ul>
                     </div>
                   </div>
@@ -538,7 +563,7 @@
           <div class="col-md-8">
             <div class="title-style-1 white">
               <h2>Facts & Figures</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo enim, lobortis luctus ante non, malesuada cursus neque. </p>
+              
             </div>
             <div class="row">
               <ul class="counter">
@@ -546,10 +571,10 @@
                   <div class="fact-box"> <i class="fas fa-flag"></i> <strong>1956</strong> <span>Established</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>46.6</strong> <span>Area KM Square</span> </div>
+                  <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>55.45*</strong> <span>Area KM Square</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-users"></i> <strong>23.3K</strong> <span>Town Population</span> </div>
+                  <div class="fact-box"> <i class="fas fa-users"></i> <strong>24.9K</strong> <span>Town Population</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
                   <div class="fact-box"> <i class="fas fa-building"></i> <strong>3</strong> <span>Barangays</span> </div>
@@ -561,6 +586,7 @@
                   <div class="fact-box"> <i class="fas fa-home"></i> <strong>5,848</strong> <span>No. Of Household</span> </div>
                 </li>
               </ul>
+              <p style="margin-left: 10px; color: #fff;">* From assessor's office cadastral map </p>
             </div>
           </div>
           <div class="col-md-4"> 
