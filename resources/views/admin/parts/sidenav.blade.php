@@ -43,7 +43,7 @@
                 <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="/administration/departments">Home</a>
-                        <a class="nav-link" href="/administration/departments/members">Members</a>
+                        <a class="nav-link" href="/administration/departments-members">Members</a>
                         {{-- <a class="nav-link" href="/administration/documents/add">Add Document</a> --}}
                     </nav>
                 </div>

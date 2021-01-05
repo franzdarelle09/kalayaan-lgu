@@ -34,7 +34,7 @@
                   <li> <a href="/news-list">News</a></li>
                   
                   
-                  <li><a href="https://www.dropbox.com/sh/titeql60uvwj0u3/AAAgn6egTaJdHMdC_h0n1py7a?dl=0" target="_blank">FULL DISCLOSURE</a></li>
+                  <li><a href="https://www.dropbox.com/sh/gjw47jegprlk5py/AACLJvK5dfNuBznngQvmEBdpa?dl=0" target="_blank">FULL DISCLOSURE</a></li>
                   <li><a href="#">Contact Us</a></li>
                 
                   

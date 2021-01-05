@@ -5,7 +5,8 @@
         <div class="card shadow-lg border-0 rounded-lg mt-5">
             <div class="card-header"><h4 class="text-center font-weight-light my-2">Update Department Members</h4></div>
             <div class="card-body">
-                <form method="post" action="/administration/departments"  enctype="multipart/form-data">
+                <form method="post" action="/administration/department-members"  enctype="multipart/form-data">
+                
                     @csrf
                     <div class="form-group">
                         <select name="department_id" id="department_id" class="form-control">
@@ -20,16 +21,30 @@
                 @if($id != 0)
                 
                     
-                    
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" class="form-control" value="">
-                    </div> 
+                    @if(count($members) == 0)
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name[]" class="form-control" value="">
+                            <label>Position</label>
+                            <input type="text" name="position[]" class="form-control" value="">
+                            <hr>
+                        </div>
+                    @else
+                        @foreach($members as $m)
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name[]" value="{{$m->name}}" class="form-control">
+                            <label>Position</label>
+                            <input type="text" name="position[]" class="form-control" value="{{$m->position}}">
+                            <hr>
+                        </div>
+                        @endforeach
+                    @endif
                     
                     
                     <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                         <span></span>
-                        <button class="btn btn-primary" type="submit">Update Department Members</button>
+                        <button class="btn btn-primary" type="submit" name="submit">Update Department Members</button>
                     </div>
 
                 
@@ -51,7 +66,7 @@
         $("#department_id").on("change", function(){
             department_id = $(this).val();
             if(department_id != 0){
-                window.location="/administration/departments/members/"+department_id;
+                window.location="/administration/departments-members/"+department_id;
             }
             
         }); 

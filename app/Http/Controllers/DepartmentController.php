@@ -104,6 +104,16 @@ class DepartmentController extends Controller
     public function updateMember($id = 0){
         $departments = Department::orderBy('name','asc')->get();
         $dep = ($id == 0) ? null : Department::find($id);
-        return view('admin.department-members',compact('id','departments','dep'));
+        $members = Member::whereDepartmentId($id)->get();
+        return view('admin.department-members',compact('id','departments','dep','members'));
+    }
+
+    public function storeMember(Request $request){
+        $names = $request->input('name');
+        $position = $request->input('position');
+        $mem_delete = Member::whereDepartmentId($request->input('department_id'))->delete();
+        
+
+
     }
 }

@@ -12,10 +12,10 @@
         <img src="/images/b2.jpg"  alt=""> 
       </div>
 
-      <div class="item">
+      {{-- <div class="item">
    
         <img src="/images/b3.jpg" alt=""> 
-      </div>
+      </div> --}}
       <!--Item End--> 
     </div>
   </div>

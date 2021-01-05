@@ -23,8 +23,8 @@ Route::middleware(['auth'])->group(function(){
 
     Route::get('/administration/departments/{id?}','DepartmentController@updateContent');
     Route::post('/administration/departments','DepartmentController@store');
-    Route::get('/administration/departments/members/{id?}','DepartmentController@updateMember');
-
+    Route::get('/administration/departments-members/{id?}','DepartmentController@updateMember');
+    Route::post('/administration/department-members','DepartmentController@storeMember');
 });
 
 Route::get('/login','UserController@login')->name('login');
