@@ -587,7 +587,7 @@
                   <div class="fact-box"> <i class="fas fa-flag"></i> <strong>1956</strong> <span>Established</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>55.45*</strong> <span>Area KM Square</span> </div>
+                  <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>55.45*</strong> <span>Area Square KM</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
                   <div class="fact-box"> <i class="fas fa-users"></i> <strong>24.9K**</strong> <span>Town Population</span> </div>
@@ -602,7 +602,7 @@
                   <div class="fact-box"> <i class="fas fa-home"></i> <strong>5,529**</strong> <span>No. Of Household</span> </div>
                 </li>
               </ul>
-              <p style="margin-left: 10px; color: #fff;">* From assessor's office cadastral map </p>
+              <p style="margin-left: 10px; color: #fff;">* From Assessor's Office cadastral map  & CLUP</p>
               <p style="margin-left: 10px; color: #fff;">** From Municipal Nutrition Action Office </p>
             </div>
           </div>
