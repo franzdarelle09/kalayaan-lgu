@@ -105,7 +105,8 @@ class DepartmentController extends Controller
         $departments = Department::orderBy('name','asc')->get();
         $dep = ($id == 0) ? null : Department::find($id);
         $members = Member::whereDepartmentId($id)->get();
-        return view('admin.department-members',compact('id','departments','dep','members'));
+        $mem_count = count($members);
+        return view('admin.department-members',compact('id','departments','dep','members','mem_count'));
     }
 
     public function storeMember(Request $request){

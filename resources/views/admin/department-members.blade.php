@@ -6,8 +6,8 @@
             <div class="card-header"><h4 class="text-center font-weight-light my-2">Update Department Members</h4></div>
             <div class="card-body">
                 <form method="post" action="/administration/department-members"  enctype="multipart/form-data">
-                
                     @csrf
+                    <input type="hidden" name="mem_count" id="mem_count" value="{{$mem_count}}">
                     <div class="form-group">
                         <select name="department_id" id="department_id" class="form-control">
                             <option value="0">Select Department</option>
@@ -32,6 +32,7 @@
                     @else
                         <div id="member-area">
                         @foreach($members as $key => $m)
+                        <div class="row{{$mem_count}}" id="row{{$mem_count}}">
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" name="name[]" value="{{$m->name}}" class="form-control">
@@ -39,6 +40,8 @@
                             <input type="text" name="position[]" class="form-control" value="{{$m->position}}">
                             <hr>
                         </div>
+                        </div>
+                        <?php $mem_count++; ?>
                         @endforeach
                         </div>
                     @endif

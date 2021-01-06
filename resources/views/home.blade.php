@@ -482,6 +482,22 @@
                 <!--Panel End--> 
                 <!--Panel Start-->
                 <div class="panel">
+                  <div class="panel-heading" role="tab" id="heading4a">
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4a" aria-expanded="true" aria-controls="collapse4a"> MDRRMO </a> </h6>
+                  </div>
+                  <div id="collapse4a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4a">
+                    <div class="panel-body">
+                      <ul>
+                        <li> <i class="fas fa-user-tie"></i> MDRRMO</li>
+                        <li> <i class="fas fa-phone"></i> (049) 523-3780</li>
+              
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--Panel End--> 
+                <!--Panel Start-->
+                <div class="panel">
                   <div class="panel-heading" role="tab" id="heading4">
                     <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4"> Health </a> </h6>
                   </div>
