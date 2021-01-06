@@ -536,7 +536,7 @@
                     <div class="panel-body">
                       <ul>
                         <li> <i class="fas fa-user-tie"></i> BRGY. SAN ANTONIO</li>
-                        <li> <i class="fas fa-phone"></i> N/A</li>
+                        <li> <i class="fas fa-phone"></i> 0967 362 9257</li>
                       </ul>
                     </div>
                   </div>

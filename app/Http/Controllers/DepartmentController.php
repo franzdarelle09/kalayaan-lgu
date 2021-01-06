@@ -116,10 +116,11 @@ class DepartmentController extends Controller
         foreach($names as $key => $n){
             $member = New Member;
             $member->name = $n;
-            $member->positon = $positions[$key];
+            $member->position = $positions[$key];
+            $member->department_id = $request->input('department_id');
             $member->save();
         }
 
-
+        return redirect('/administration/departments-members/'.$request->input('department_id'));
     }
 }

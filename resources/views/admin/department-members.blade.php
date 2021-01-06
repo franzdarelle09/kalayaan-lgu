@@ -30,7 +30,8 @@
                             <hr>
                         </div>
                     @else
-                        @foreach($members as $m)
+                        <div id="member-area">
+                        @foreach($members as $key => $m)
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" name="name[]" value="{{$m->name}}" class="form-control">
@@ -39,11 +40,12 @@
                             <hr>
                         </div>
                         @endforeach
+                        </div>
                     @endif
                     
                     
                     <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                        <span></span>
+                        <button id="add-member" type="button" class="btn btn-primary">Add Additional Member</button>
                         <button class="btn btn-primary" type="submit" name="submit">Update Department Members</button>
                     </div>
 
@@ -55,6 +57,15 @@
             </div>
             
         </div>
+    </div>
+</div>
+<div id="fetch-field" style="display: none;">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name[]" value="" class="form-control">
+        <label>Position</label>
+        <input type="text" name="position[]" class="form-control" value="">
+        <hr>
     </div>
 </div>
 @endsection
@@ -69,7 +80,12 @@
                 window.location="/administration/departments-members/"+department_id;
             }
             
-        }); 
+        });
+
+        $("#add-member").on("click", function(){
+            field = $("#fetch-field").html();
+            $("#member-area").append(field);
+        }) 
         
     });
 </script>
