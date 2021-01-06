@@ -590,7 +590,7 @@
                   <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>55.45*</strong> <span>Area KM Square</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-users"></i> <strong>24.9K</strong> <span>Town Population</span> </div>
+                  <div class="fact-box"> <i class="fas fa-users"></i> <strong>24.9K**</strong> <span>Town Population</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
                   <div class="fact-box"> <i class="fas fa-building"></i> <strong>3</strong> <span>Barangays</span> </div>
@@ -599,10 +599,11 @@
                   <div class="fact-box"> <i class="fas fa-road"></i> <strong>4015</strong> <span>ZIP Code</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-home"></i> <strong>5,848</strong> <span>No. Of Household</span> </div>
+                  <div class="fact-box"> <i class="fas fa-home"></i> <strong>5,529**</strong> <span>No. Of Household</span> </div>
                 </li>
               </ul>
               <p style="margin-left: 10px; color: #fff;">* From assessor's office cadastral map </p>
+              <p style="margin-left: 10px; color: #fff;">** From Municipal Nutrition Action Office </p>
             </div>
           </div>
           <div class="col-md-4"> 
