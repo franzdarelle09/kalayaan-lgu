@@ -6,7 +6,7 @@
         </div>
         <div class="col-md-5 col-sm-5">
           <ul class="footer-social">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://facebook.com/lgukalayaanlaguna/"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
