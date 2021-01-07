@@ -40,6 +40,10 @@ class HomeController extends Controller
         return view('about');
     }
 
+    public function dilg(){
+        return view('dilg');
+    }
+
     public function test(){
         // $user = new User();
         // $user->password = Hash::make('kalayaan4015');

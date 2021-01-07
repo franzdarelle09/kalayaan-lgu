@@ -39,3 +39,4 @@ Route::get('/department/{slug}','DepartmentController@index');
 Route::get('/department/{slug}/members','DepartmentController@members');
 Route::get('/department/{slug}/services','DepartmentController@services');
 Route::get('/department/{slug}/forms','DepartmentController@forms');
+Route::get('/dilg','HomeController@dilg');
