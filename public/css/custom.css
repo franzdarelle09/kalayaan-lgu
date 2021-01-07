@@ -7173,3 +7173,6 @@ body{
 		display: none;
 	}
 }
+.pp_social{
+	display: none !important;
+}
