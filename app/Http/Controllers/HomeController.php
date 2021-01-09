@@ -40,8 +40,16 @@ class HomeController extends Controller
         return view('about');
     }
 
-    public function dilg(){
-        return view('dilg');
+    public function projects(){
+        return view('projects');
+    }
+
+    public function policy(){
+        return view('policy');
+    }
+
+    public function terms(){
+        return view('terms');
     }
 
     public function test(){

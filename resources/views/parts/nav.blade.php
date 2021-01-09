@@ -35,7 +35,7 @@
                   
                   
                   <li><a href="https://www.dropbox.com/sh/gjw47jegprlk5py/AACLJvK5dfNuBznngQvmEBdpa?dl=0" target="_blank">FULL DISCLOSURE</a></li>
-                  <li><a href="/dilg">DILG</a></li>
+                  <li><a href="/projects">PROJECTS</a></li>
                 
                   
                 </ul>

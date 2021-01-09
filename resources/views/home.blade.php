@@ -584,10 +584,10 @@
             <div class="row">
               <ul class="counter">
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-flag"></i> <strong>1956</strong> <span>Established</span> </div>
+                  <div class="fact-box"> <i class="fas fa-flag"></i> <strong>1908</strong> <span>Established</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
-                  <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>55.45*</strong> <span>Area Square KM</span> </div>
+                  <div class="fact-box"> <i class="fas fa-map-marked-alt"></i> <strong>55.46*</strong> <span>Area Square KM</span> </div>
                 </li>
                 <li class="col-md-4 col-sm-4">
                   <div class="fact-box"> <i class="fas fa-users"></i> <strong>24.9K**</strong> <span>Town Population</span> </div>
@@ -609,7 +609,7 @@
           <div class="col-md-4"> 
             <!--Stay Connected Start-->
             <div class="stay-connected">
-              <h5>Stay Connected</h5>
+              <h5>Contact Us</h5>
               <p>Signup to get the updates on email from the town & town affairs!</p>
               <ul>
                 <li>
@@ -617,6 +617,9 @@
                 </li>
                 <li>
                   <input type="text" class="form-control" placeholder="Enter Your Email Address">
+                </li>
+                <li>
+                  <textarea class="form-control" name="message" placeholder="Enter Your Message" style="height: 130px;"></textarea>
                 </li>
                 <li>
                   <input type="submit" value="Submit Details">
