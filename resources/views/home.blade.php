@@ -13,16 +13,93 @@
 <link href="/css/all.css" rel="stylesheet">
 <link href="/css/owl.carousel.min.css" rel="stylesheet">
 <link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/prettyPhoto.css" rel="stylesheet">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 <link rel="icon" href="/images/fav.png" type="image/png">
 <script src="https://kit.fontawesome.com/8fee6a85fe.js" crossorigin="anonymous"></script>
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <style>
+        /* Paste this css to your style sheet file or under head tag */
+        /* This only works with JavaScript, 
+        if it's not present, don't show loader */
+        .no-js #loader { display: none;  }
+        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .se-pre-con {
+          position: fixed;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          z-index: 9999;
+          background: url('https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif') center no-repeat #fff;
+        }
+      </style>
+      <script src="/js/jquery.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+      <script type="text/javascript">
+      //paste this code under the head tag or in a separate js file.
+        // Wait for window load
+        $(window).load(function() {
+          // Animate loader off screen
+          $(".se-pre-con").fadeOut("slow");
+        });
+      </script>
 </head>
 <body>
-<!--Wrapper Start-->
-<div class="wrapper"> 
+  <div class="se-pre-con"></div>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=646052329059990&autoLogAppEvents=1" nonce="MLZvu4sD"></script>
+
+  {{-- <div class="fb-page" data-href="https://web.facebook.com/lgukalayaanlaguna" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/lgukalayaanlaguna" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/lgukalayaanlaguna">Municipality of Kalayaan, Laguna</a></blockquote></div> --}}
+  <!--Wrapper Start-->
+  <style type="text/css">
+    
+
+    .slider {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      max-height: 300px;
+      width: auto;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    
+    
+  </style>
+
+  <div class="wrapper"> 
   <!--Header Start-->
   <header class="wf100 header">
     <div class="topbar">
@@ -62,188 +139,44 @@
   <!--Slider End--> 
   <!--Main Content Start-->
   <div class="main-content"> 
-    <!--Local Boards & Services-->
-    {{-- <section class="wf100 p80">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="local-brands">
-              <div class="title-style-1">
-                <h2>Local Boards & Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo enim, lobortis luctus ante non, malesuada cursus neque. Praesent posuere nunc sapien, non tincidunt ligula aliquet eget. </p>
-              </div>
-              <div class="row"> 
-                
-                <!--Local Service Box Start-->
-                <div class="col-md-6 col-sm-6">
-                  <ul class="lb-ser-box">
-                    
-                    <!--Start-->
-                    <li> <span class="lb-icon"><img src="/images/local-icon1.png" alt=""></span>
-                      <h6>History, Culture & Heritage</h6>
-                      <p>Explore art objects from six contemporary artists & designers focus on function.</p>
-                    </li>
-                    <!--End--> 
-                    
-                    <!--Start-->
-                    <li> <span class="lb-icon"><img src="/images/local-icon3.png" alt=""></span>
-                      <h6>Constitution & Laws</h6>
-                      <p>Excepteur sintened occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-                    </li>
-                    <!--End--> 
-                    
-                    <!--Start-->
-                    <li> <span class="lb-icon"><img src="/images/local-icon6.png" alt=""></span>
-                      <h6>Education Sector</h6>
-                      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
-                    </li>
-                    <!--End-->
-                    
-                  </ul>
-                </div>
-                <!--Local Service Box End--> 
-                
-                <!--Local Service Box Start-->
-                <div class="col-md-6 col-sm-6">
-                  <ul class="lb-ser-box">
-                    
-                    <!--Start-->
-                    <li> <span class="lb-icon"><img src="/images/local-icon2.png" alt=""></span>
-                      <h6>Government Economy</h6>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                    </li>
-                    <!--End--> 
-                    
-                    <!--Start-->
-                    <li> <span class="lb-icon"><img src="/images/local-icon4.png" alt=""></span>
-                      <h6>Business & Administration</h6>
-                      <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </li>
-                    <!--End--> 
-                    
-                    <!--Start-->
-                    <li> <span class="lb-icon"><img src="/images/local-icon5.png" alt=""></span>
-                      <h6>Budget & Policies</h6>
-                      <p>Debitis aut rerum necessitatibus saeped eveniet ut et voluptates.</p>
-                    </li>
-                    <!--End-->
-                    
-                  </ul>
-                </div>
-                <!--Local Service Box End--> 
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="emergency-info">
-              <h5>Helplines &amp;
-                Emergency
-                Services </h5>
-              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Mayor Office </a> </h6>
-                  </div>
-                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading2">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2"> Town Council </a> </h6>
-                  </div>
-                  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading3">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3"> Police Emergency </a> </h6>
-                  </div>
-                  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading4">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4"> Ambulance </a> </h6>
-                  </div>
-                  <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading5">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5"> E-Services </a> </h6>
-                  </div>
-                  <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-              </div>
-            </div>
-            <a href="#" class="jobs-link red">Documents</a>
-            <ul class="reports">
-              <li> <a href="#"><i class="fas fa-file-alt"></i> 2020 Economy Report</a> </li>
-              <li> <a href="#"><i class="fas fa-file-alt"></i> 30 Days Plans of Govt.</a> </li>
-              <li> <a href="#"><i class="fas fa-file-alt"></i> Court Case about TAX</a> </li>
-            </ul>
-          </div>
-        </div>
+   <!--Announcements-->
+   <section class="wf100 p80 news-event">
+    <div class="container">
+      <div class="title-style-1 text-center" style="margin-bottom: -90px;">
+        <h2>Announcements</h2>
+     
       </div>
-    </section> --}}
-    <!--Local Boards & Services End--> 
+      <div class="row">
+        
+
+      
+
+      <div class="col-md-12">
+        <section class="center slider">
+          <div>
+            <img src="/images/announcements/1.jpg">
+          </div>
+          <div>
+            <img src="/images/announcements/2.jpg">
+          </div>
+          <div>
+            <img src="/images/announcements/3.jpg">
+          </div>
+          <div>
+            <img src="/images/announcements/4.jpg">
+          </div>
+          <div>
+            <img src="/images/announcements/5.jpg">
+          </div>
+          
+        </section>
+      </div>
+        
+   
+      </div>
+    </div>
+  </section>
+  <!-- End Announcements--> 
     <!--Event Festivals & News Articles Start-->
     <section class="wf100 p80 news-event">
       <div class="container">
@@ -647,9 +580,27 @@
 </div>
 <!--Wrapper End--> 
 <!-- JS --> 
-<script src="/js/jquery.min.js"></script> 
+
 <script src="/js/bootstrap.min.js"></script> 
 <script src="/js/owl.carousel.min.js"></script> 
+<script src="/js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="/js/custom.js"></script>
+
+
+
+<script>
+  $(window).on('load',function(){
+    $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true
+      });
+  });
+</script>
+
 </body>
 </html>

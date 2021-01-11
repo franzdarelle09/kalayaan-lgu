@@ -106,21 +106,21 @@ jQuery(document).ready(function($) {
 
 
     // ------- Event Slider Start ------- //
-    if ($('.recent-event-slider').length) {
-        $('.recent-event-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-        });
-        $('.recent-event-slider-nav').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '.recent-event-slider',
-            dots: false,
-            centerMode: false,
-            focusOnSelect: true,
-        });
-    }
+    // if ($('.recent-event-slider').length) {
+    //     $('.recent-event-slider').slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         arrows: false,
+    //     });
+    //     $('.recent-event-slider-nav').slick({
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         asNavFor: '.recent-event-slider',
+    //         dots: false,
+    //         centerMode: false,
+    //         focusOnSelect: true,
+    //     });
+    // }
     // ------- Event Slider End ------- //	
 
 
