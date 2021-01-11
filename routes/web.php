@@ -25,6 +25,11 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/administration/departments','DepartmentController@store');
     Route::get('/administration/departments-members/{id?}','DepartmentController@updateMember');
     Route::post('/administration/department-members','DepartmentController@storeMember');
+
+    Route::get('/administration/announcements/','AnnouncementController@index');
+    Route::get('/administration/announcements/create','AnnouncementController@create');
+    Route::post('/administration/announcements/store','AnnouncementController@store');
+    Route::get('/administration/announcements/delete','AnnouncementController@delete');
 });
 
 Route::get('/login','UserController@login')->name('login');
