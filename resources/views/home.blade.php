@@ -153,21 +153,12 @@
 
       <div class="col-md-12">
         <section class="center slider">
-          <div>
-            <img src="/images/announcements/1.jpg">
-          </div>
-          <div>
-            <img src="/images/announcements/2.jpg">
-          </div>
-          <div>
-            <img src="/images/announcements/3.jpg">
-          </div>
-          <div>
-            <img src="/images/announcements/4.jpg">
-          </div>
-          <div>
-            <img src="/images/announcements/5.jpg">
-          </div>
+          @foreach($announcements as $a)
+            <div>
+              <img src="/storage/announcement/<?= $a->photo ?>" />
+            </div>
+          @endforeach
+          
           
         </section>
       </div>

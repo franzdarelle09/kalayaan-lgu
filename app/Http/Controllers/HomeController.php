@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Announcement;
 use App\Department;
 use App\Documentlist;
 use Illuminate\Http\Request;
@@ -16,8 +17,8 @@ class HomeController extends Controller
         foreach($news as $n){
             $sub_count[] = $this->getOptimalSubstrCount($n->title);
         }
-        
-        return view('home',compact('news','sub_count'));
+        $announcements = Announcement::orderBy('id','desc')->get();
+        return view('home',compact('news','sub_count','announcements'));
     }
 
     
@@ -51,6 +52,7 @@ class HomeController extends Controller
     public function terms(){
         return view('terms');
     }
+
 
     public function test(){
         // $user = new User();
