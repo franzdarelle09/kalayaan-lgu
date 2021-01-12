@@ -30,6 +30,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/administration/announcements/create','AnnouncementController@create');
     Route::post('/administration/announcements/store','AnnouncementController@store');
     Route::get('/administration/announcements/delete','AnnouncementController@delete');
+
+    Route::get('/administration/messages','AnnouncementController@messages');
 });
 
 Route::get('/login','UserController@login')->name('login');
@@ -47,3 +49,4 @@ Route::get('/department/{slug}/forms','DepartmentController@forms');
 Route::get('/projects','HomeController@projects');
 Route::get('/policy','HomeController@policy');
 Route::get('/terms','HomeController@terms');
+Route::post('/contact/save','HomeController@contactSave');

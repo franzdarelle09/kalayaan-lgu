@@ -38,17 +38,17 @@ jQuery(document).ready(function($) {
                 0: {
                     items: 1,
                     nav: true,
-                    loop: false,
+                    loop: true,
                 },
                 600: {
                     items: 2,
                     nav: true,
-                    loop: false,
+                    loop: true,
                 },
                 1000: {
                     items: 4,
                     nav: true,
-                    loop: false
+                    loop: true
                 }
             }
         })

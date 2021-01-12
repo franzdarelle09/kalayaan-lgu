@@ -66,7 +66,7 @@
         <div class="container">
             <div class="title-style-1 text-center" style="margin-top: 50px;">
                 <h2>Elected Officials</h2>
-                
+                <h5>2019-2022</h5>
               </div>
            <div class="row justify-content-md-center margin-official">
               <div class="col col-md-12 col-sm-12" style="display: flex; margin-bottom:20px;">
@@ -75,7 +75,7 @@
                      <div class="team-thumb">  <img src="/images/officials/mayor.jpg" alt=""></div>
                      <div class="team-txt">
                         <h5>HON. Sandy Laganapan</h5>
-                        <strong class="dep">Town Mayor</strong>
+                        <strong class="dep">Municipal Mayor</strong>
                         
                         <ul class="team-social">
                            <li><em>Connect:</em></li>
@@ -94,7 +94,7 @@
                   <div class="team-thumb">  <img src="/images/officials/vm.jpg" alt=""></div>
                   <div class="team-txt">
                      <h5>HON. Kenneth<br>Ragaza</h5>
-                     <strong class="dep">Town Vice Mayor</strong>
+                     <strong class="dep">Municipal Vice Mayor</strong>
                      
                      <ul class="team-social">
                         <li><em>Connect:</em></li>
@@ -117,7 +117,7 @@
                   <div class="team-thumb">  <img src="/images/officials/1.jpg" alt=""></div>
                   <div class="team-txt">
                      <h5>hon. Darwin<br> Ponce<br><span style="visibility: hidden;">filler</span></h5>
-                     <strong class="dep">Town Councilor</strong>
+                     <strong class="dep">Municipal Councilor</strong>
                      
                      <ul class="team-social">
                         <li><em>Connect:</em></li>
@@ -136,7 +136,7 @@
                    <div class="team-thumb">  <img src="/images/officials/2.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. Christoper Ramiro</h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
@@ -155,7 +155,7 @@
                    <div class="team-thumb">  <img src="/images/officials/3.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. RUSSEL<br> LAGANAS<br><span style="visibility: hidden;">filler</span></h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
@@ -175,7 +175,7 @@
                    <div class="team-thumb">  <img src="/images/officials/4.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. Marian<br>Erufino<br><span style="visibility: hidden;">filler</span></h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
@@ -194,7 +194,7 @@
                    <div class="team-thumb">  <img src="/images/officials/5.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. marlon<br>laganas<br><span style="visibility: hidden;">filler</span></h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
@@ -213,7 +213,7 @@
                    <div class="team-thumb">  <img src="/images/officials/6.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. Veelly James<br>Cabamalan</h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
@@ -232,7 +232,7 @@
                    <div class="team-thumb">  <img src="/images/officials/7.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. jayson<br>blanco<br><span style="visibility: hidden;">filler</span></h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>
@@ -251,7 +251,7 @@
                    <div class="team-thumb">  <img src="/images/officials/8.jpg" alt=""></div>
                    <div class="team-txt">
                       <h5>HON. marty<br>sasondoncillo<br><span style="visibility: hidden;">filler</span></h5>
-                      <strong class="dep">Town Councilor</strong>
+                      <strong class="dep">Municipal Councilor</strong>
                       
                       <ul class="team-social">
                          <li><em>Connect:</em></li>

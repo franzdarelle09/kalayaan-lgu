@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="_token" content="{!! csrf_token() !!}" /> 
 <title>KALAYAAN</title>
 <!-- CSS Files -->
 <link href="/css/custom.css?<?= time(); ?>" rel="stylesheet">
@@ -277,31 +278,20 @@
             <div class="ch-box">
               <div class="ch-thumb"> <img src="images/hg2.jpg" alt=""> </div>
               <div class="ch-txt">
-                <h5><a href="#">Twin Falls</a></h5>
+                <h5><a href="#">Tourism</a></h5>
               
                 {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p> --}}
               </div>
             </div>
           </div>
           <!--Item End--> 
-          <!--Item Start-->
-          <div class="item">
-            <div class="ch-box">
-              <div class="ch-thumb"> <img src="images/hg3.jpg" alt=""> </div>
-              <div class="ch-txt">
-                <h5><a href="#">CBK Powerplant</a></h5>
-                
-                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p> --}}
-              </div>
-            </div>
-          </div>
-          <!--Item End--> 
+          
           <!--Item Start-->
           <div class="item">
             <div class="ch-box">
               <div class="ch-thumb"> <img src="/images/hg4.jpg" alt=""> </div>
               <div class="ch-txt">
-                <h5><a href="#"> Churches </a></h5>
+                <h5><a href="#"> Landmarks </a></h5>
                
                 {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p> --}}
               </div>
@@ -313,7 +303,7 @@
             <div class="ch-box">
               <div class="ch-thumb"> <img src="/images/hg5.jpg" alt=""> </div>
               <div class="ch-txt">
-                <h5><a href="#"> Food </a></h5>
+                <h5><a href="#"> Delicacies </a></h5>
                
                 {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p> --}}
               </div>
@@ -534,19 +524,23 @@
             <!--Stay Connected Start-->
             <div class="stay-connected">
               <h5>Contact Us</h5>
-              <p>Signup to get the updates on email from the town & town affairs!</p>
+              
+              <p>Any suggestion or reports? Get in touch with us.</p>
               <ul>
                 <li>
-                  <input type="text" class="form-control" placeholder="Enter Your Name">
+                  <input type="text" id="contact-name" class="form-control" placeholder="Enter Your Name" /> 
                 </li>
                 <li>
-                  <input type="text" class="form-control" placeholder="Enter Your Email Address">
+                  <input type="text" id="contact-email" class="form-control" placeholder="Enter Your Email Address" />
                 </li>
                 <li>
-                  <textarea class="form-control" name="message" placeholder="Enter Your Message" style="height: 130px;"></textarea>
+                  <textarea class="form-control" id="contact-msg" name="message" placeholder="Enter Your Message" style="height: 130px;"></textarea>
+                </li>
+                <li class="hidden text-center" id="contact-success">
+                  <p style="color: yellow">Message Sent Successfully!</p>
                 </li>
                 <li>
-                  <input type="submit" value="Submit Details">
+                  <button type="button" id="contact-submit" >Submit Details</button>
                 </li>
               </ul>
             </div>
@@ -580,7 +574,7 @@
 
 
 
-<script>
+<script type="text/javascript">
   $(window).on('load',function(){
     $(".center").slick({
         dots: true,
@@ -591,6 +585,34 @@
         variableWidth: true
       });
   });
+ 
+  $("#contact-submit").on("click", function(){
+      const name = $("#contact-name").val();
+      const email = $("#contact-email").val();
+      const msg = $("#contact-msg").val();
+
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+        }
+      });
+
+      $.ajax({
+        type:"POST",
+        url:"/contact/save",
+        data:{name,email,msg},
+        success: function(res){
+          if(res == "success"){
+            $("#contact-name").val("");
+            $("#contact-email").val("");
+            $("#contact-msg").val("");
+            
+            $("#contact-success").removeClass("hidden");
+          }
+        }
+      })
+  });
+  
 </script>
 
 </body>

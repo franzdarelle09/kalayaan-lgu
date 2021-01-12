@@ -1319,11 +1319,11 @@ a.see-more:hover {
 	padding: 0 20px;
 	font-size: 16px;
 }
-.stay-connected input[type="submit"] {
+.stay-connected input[type="submit"],button {
 	width: 100%;
 	border: 0px;
-	background: #40407e;
-	color: #fff;
+	background: #C10202;
+	color: #fff !important;
 	height: 55px;
 	line-height: 55px;
 	font-family: 'Montserrat', sans-serif;

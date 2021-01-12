@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Announcement;
+use App\Message;
 use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
@@ -50,5 +51,11 @@ class AnnouncementController extends Controller
         
         $a->delete();
         return 'success';
+    }
+
+    public function messages()
+    {
+        $messages = Message::orderBy('id','desc')->get();
+        return view('admin.messages',compact('messages'));
     }
 }

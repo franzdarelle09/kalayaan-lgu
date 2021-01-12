@@ -29,7 +29,7 @@
   <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box mb30 c3">
-      <h6>Housing & Planning</h6>
+      <h6>Housing & Land Use</h6>
       <ul>
         <li><a href="#"><i class="fas fa-circle"></i> Residents & Commercial Areas</a></li>
         <li><a href="#"><i class="fas fa-circle"></i> Building Standards</a></li>
@@ -43,7 +43,7 @@
   <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box c4">
-      <h6>Health & Securities</h6>
+      <h6>Health & Social Services</h6>
       <ul>
         <li><a href="#"><i class="fas fa-circle"></i> Hospitals & Emergencies</a></li>
         <li><a href="#"><i class="fas fa-circle"></i> Healty State Life</a></li>
@@ -57,7 +57,7 @@
   <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box c5">
-      <h6>Laws & Justice</h6>
+      <h6 style="font-size: 12px;">Peace and Order and Public Safety</h6>
       <ul>
         <li><a href="#"><i class="fas fa-circle"></i> Constitution & Bylaws</a></li>
         <li><a href="#"><i class="fas fa-circle"></i> Legal Services</a></li>
@@ -71,7 +71,7 @@
   <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box c6">
-      <h6>Roads & Transport</h6>
+      <h6>Engineering Services</h6>
       <ul>
         <li><a href="#"><i class="fas fa-circle"></i> Civil Aviation</a></li>
         <li><a href="#"><i class="fas fa-circle"></i> Maritime Services</a></li>

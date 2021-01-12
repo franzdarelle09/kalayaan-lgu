@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Message;
 use App\Announcement;
 use App\Department;
 use App\Documentlist;
@@ -51,6 +52,17 @@ class HomeController extends Controller
 
     public function terms(){
         return view('terms');
+    }
+
+    public function contactSave(Request $request)
+    {
+        $message = new Message;
+        $message->name = $request->input('name');
+        $message->email = $request->input('email');
+        $message->message = $request->input('msg');
+        $message->ipaddress = $request->ip();
+        $message->save();
+        return 'success';
     }
 
 
