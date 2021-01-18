@@ -153,10 +153,14 @@
       
 
       <div class="col-md-12">
+        <a type="button" id="modal-trigger"  data-toggle="modal" data-target="#myModal" style="display: none">Open Modal</a>
+        
         <section class="center slider">
           @foreach($announcements as $a)
             <div>
-              <img src="/storage/announcement/<?= $a->photo ?>" />
+              <a href="#" data-id="{{$a->id}}" class="announcement-details">
+              <img src="/storage/announcement/<?= $a->photo ?>"  />
+              </a>
             </div>
           @endforeach
           
@@ -563,6 +567,24 @@
   @include('parts.sidebar')
   <div class="overlay"></div>
 </div>
+<div class="modal fade" id="myModal" role="dialog" style="z-index: 2000 !important;">
+            <div class="modal-dialog">
+            
+              
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="" alt="" id="modal-photo" style="width: 100%;" />
+                  <p class="modal-message" style="margin-top:20px; color: fff; font-family:sans-serif">Some text in the modal.</p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
 <!--Wrapper End--> 
 <!-- JS --> 
 
@@ -586,6 +608,26 @@
       });
   });
  
+  $(".announcement-details").on("click", function(){
+      const announcement_id = $(this).data('id');
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+        }
+      });
+      $.ajax({
+        type:'POST',
+        url:'/ajax/announcement-details',
+        data:{announcement_id},
+        success: function(res){
+          $(".modal-title").html(res.title);
+          $(".modal-message").html(res.content);
+          $("#modal-photo").attr("src",`/storage/announcement/${res.photo}`);
+          $("#modal-trigger").click();
+        }
+      });
+  });
+
   $("#contact-submit").on("click", function(){
       const name = $("#contact-name").val();
       const email = $("#contact-email").val();

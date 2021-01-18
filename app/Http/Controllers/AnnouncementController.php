@@ -58,4 +58,8 @@ class AnnouncementController extends Controller
         $messages = Message::orderBy('id','desc')->get();
         return view('admin.messages',compact('messages'));
     }
+    public function ajaxAnouncementDetails(Request $request){
+        $announcement = Announcement::find($request->input('announcement_id'));
+        return $announcement;
+    }
 }

@@ -32,6 +32,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/administration/announcements/delete','AnnouncementController@delete');
 
     Route::get('/administration/messages','AnnouncementController@messages');
+    Route::post('/ajax/announcement-details','AnnouncementController@ajaxAnouncementDetails');
 });
 
 Route::get('/login','UserController@login')->name('login');

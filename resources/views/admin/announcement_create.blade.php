@@ -13,7 +13,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <textarea class="ckeditor form-control" name="wysiwyg-editor"></textarea>
+                        <textarea class="form-control" name="content"></textarea>
                     </div>
                     
                     <div class="form-group">

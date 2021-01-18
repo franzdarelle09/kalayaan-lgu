@@ -15,6 +15,7 @@
                             <tr>
                                 <th>Title</th>
                                 <th>Image</th>
+                                <th>Message</th>
                                 <th>Date</th>
                                 <th>Action</th>
                                 
@@ -24,6 +25,7 @@
                             <tr>
                                 <th>Title</th>
                                 <th>Image</th>
+                                <th>Message</th>
                                 <th>Date</th>
                                 <th>Action</th>
                                 
@@ -34,7 +36,8 @@
                             <tr>
                                 <td>{{$a->title}}</td>
                                 <td><img src="/storage/announcement/{{$a->photo}}" style="height: 200px; width: auto;" /></td>
-                                <td><?= date('d M, Y',strtotime($a->created_at)); ?></td>
+                                <td>{{$a->content}}</td>
+                                <td><?= date('d M, Y',strtotime($a->created_at)); ?></td>                                
                                 <td>
                                     {{-- <a class="btn btn-primary" href="/administration/news/edit/{{$n->id}}">Edit</a> --}}
                                     <button class="btn btn-danger delete" data-id="{{$a->id}}">Delete</button>

@@ -60,7 +60,7 @@
                         {{-- <a class="nav-link" href="/administration/documents/add">Add Document</a> --}}
                     </nav>
                 </div>
-                <a class="nav-link" href="/administration/message">
+                <a class="nav-link" href="/administration/messages">
                     <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
                     Message
                 </a>
