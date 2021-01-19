@@ -4168,8 +4168,8 @@ a.join-now {
 }
 .widget .upcoming-events li {
 	position: relative;
-	padding-left: 78px;
-	margin-bottom: 20px;
+	/* padding-left: 78px; */
+	/* margin-bottom: 20px; */
 }
 .widget .upcoming-events .edate {
 	width: 62px;

@@ -122,7 +122,7 @@
 
                              ?>
                              <li>
-                                <div class="edate"> <strong>{{$d}}</strong> {{$m}} <span class="year">{{$y}}</span> </div>
+                                <div><i class="fa fa-newspaper-o"></i></div>
                                 <h6> <a href="/news/{{$r->slug}}">{{$r->title}}</a> </h6>
                                 {{-- <span class="loc">Kalayaan, Laguna, PH</span>  --}}
                              </li>
