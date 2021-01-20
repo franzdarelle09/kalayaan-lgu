@@ -68,7 +68,7 @@
            <div class="row">
               <!--News Box Start-->
               @foreach($news as $n)
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-4 col-sm-6">
                  <div class="news-box">
                     <div class="new-thumb">
                        <span class="cat c1">News</span> <img src="/storage/article_photos/thumbnail/{{$n->large_thumb}}" alt=""> 
