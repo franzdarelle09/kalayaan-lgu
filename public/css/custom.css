@@ -405,6 +405,7 @@ header {
 	right: 20px;
 	bottom: 20px;
 	z-index: 999;
+	display: flex;
 }
 .main-slider .owl-carousel button.owl-dot {
 	margin-left: 5px;
