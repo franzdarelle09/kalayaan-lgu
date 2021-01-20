@@ -218,7 +218,7 @@
                        <?php 
                         $teaser = substr(html_entity_decode(strip_tags($n->body)), 0, $sub_count[$key]);
                        ?>
-                       <p> {{$teaser}} [...] </p>
+                       <p> <?= $teaser ?> [...] </p>
                     </div>
                     <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="/news/{{$n->slug}}"><i class="fas fa-arrow-right"></i></a> </div>
                  </div>
