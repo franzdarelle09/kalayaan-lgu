@@ -7176,3 +7176,15 @@ body{
 .pp_social{
 	display: none !important;
 }
+.vishidden{
+	visibility: hidden !important;
+}
+.department-box ul{
+	min-height: 240px !important;
+}
+.department-box h6{
+	min-height: 50px;
+}
+.department-box{
+	min-width: 262px !important;
+}
