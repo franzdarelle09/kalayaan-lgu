@@ -8,7 +8,7 @@
                   <li> <a href="/">Home</a></li>
                   <li> <a href="/about-us">About Us</a></li>
                   <li> <a href="/officials">Officials</a></li>
-                  <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments <span class="caret"></span></a>
+                  {{-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <?php
                         $dep = App\Department::orderBy('name')->get();
@@ -19,7 +19,7 @@
                       @endif
                       @endforeach
                     </ul>
-                  </li>
+                  </li> --}}
                   <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documents <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <?php
