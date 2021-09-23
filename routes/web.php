@@ -33,6 +33,14 @@ Route::middleware(['auth'])->group(function(){
 
     Route::get('/administration/messages','AnnouncementController@messages');
     Route::post('/ajax/announcement-details','AnnouncementController@ajaxAnouncementDetails');
+
+    Route::get('/administration/projects','ProjectController@index');
+    Route::get('/administration/project/add','ProjectController@add');
+    Route::post('/administration/project/save','ProjectController@saveProject');
+    Route::get('/administration/add_project_photo/{project_id}','ProjectController@addProjectPhoto');
+    Route::post('/administration/project-photo/save','ProjectController@saveProjectPhoto');
+    Route::post('/administration/projects/delete','ProjectController@delete');
+
 });
 
 Route::get('/login','UserController@login')->name('login');
@@ -48,6 +56,7 @@ Route::get('/department/{slug}/members','DepartmentController@members');
 Route::get('/department/{slug}/services','DepartmentController@services');
 Route::get('/department/{slug}/forms','DepartmentController@forms');
 Route::get('/projects','HomeController@projects');
+Route::get('/project-photos/{id}','HomeController@projectDetails');
 Route::get('/policy','HomeController@policy');
 Route::get('/terms','HomeController@terms');
 Route::post('/contact/save','HomeController@contactSave');

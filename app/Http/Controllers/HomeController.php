@@ -9,6 +9,8 @@ use App\Documentlist;
 use Illuminate\Http\Request;
 use App\User;
 use App\News;
+use App\Project;
+use App\ProjectPhoto;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 class HomeController extends Controller
@@ -43,7 +45,14 @@ class HomeController extends Controller
     }
 
     public function projects(){
-        return view('projects');
+        $projects = Project::whereStatus(1)->orderBy('name','asc')->get();
+        return view('project-list',compact('projects'));
+    }
+
+    public function projectDetails($id){
+        $project = Project::findOrFail($id);
+        $project_photos = ProjectPhoto::whereProjectId($project->id)->get();
+        return view('project-details',compact('project','project_photos'));
     }
 
     public function policy(){
