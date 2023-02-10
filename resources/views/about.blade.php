@@ -65,8 +65,7 @@
     <div class="department-details">
         <div class="container">
            <div class="row">
-              <div class="col-md-12 text-center">
-                 <!--Department Details Txt Start-->
+              <!-- <div class="col-md-12 text-center">
                  <div class="deprt-txt text-center" style="max-width: 800px; margin: auto;">
                     <h3>MISSION</h3>
                     <h6 style="font-size:28px; margin-bottom: 30px;">To provide maximum services through people empowerment and in partnership with other agencies, private sectors and other civic societies, steer social, economic, infrastructure development having deep awareness on environmental sustainability towards a disaster-resilient community.
@@ -78,15 +77,10 @@
                     
                     <h3>VISION</h3>
                     <h6 style="font-size:28px; margin-bottom: 30px;">A well-developed, agricultural and environment - friendly community of peaceful, God-loving, healthy and united citizenry.</h6>
-                    <h6 style="font-size:28px; margin-bottom: 50px; font-style: italic;">(Isang maunlad na agrikultura at makakalikasang komunidad na may mapayapa, maka-Diyos, malusog at nagkakaisang mamamayan.)</h6>
-                    
+                    <h6 style="font-size:28px; margin-bottom: 50px; font-style: italic;">(Isang maunlad na agrikultura at makakalikasang komunidad na may mapayapa, maka-Diyos, malusog at nagkakaisang mamamayan.)</h6>   
                  </div>
-                 <!--Department Details Txt End--> 
-                 
-                 
-               
-              </div>
-              
+              </div> -->
+              <?php echo $content->body; ?>
            </div>
         </div>
      </div>

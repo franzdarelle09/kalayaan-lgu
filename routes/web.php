@@ -41,6 +41,11 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/administration/project-photo/save','ProjectController@saveProjectPhoto');
     Route::post('/administration/projects/delete','ProjectController@delete');
 
+    Route::prefix('administration')->group(function() {
+        Route::get('/contents/{type}', 'ContentController@index');
+        Route::post('/contents', 'ContentController@save');
+    });
+
 });
 
 Route::get('/login','UserController@login')->name('login');
@@ -60,3 +65,4 @@ Route::get('/project-photos/{id}','HomeController@projectDetails');
 Route::get('/policy','HomeController@policy');
 Route::get('/terms','HomeController@terms');
 Route::post('/contact/save','HomeController@contactSave');
+Route::get('/test','HomeController@test');

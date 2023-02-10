@@ -140,7 +140,8 @@
   <!--Slider End--> 
   <!--Main Content Start-->
   <div class="main-content"> 
-   <!--Announcements-->
+  @if(count($announcements) > 0) 
+  <!--Announcements-->
    <section class="wf100 p80 news-event">
     <div class="container">
       <div class="title-style-1 text-center" style="margin-bottom: -90px;">
@@ -171,87 +172,90 @@
    
       </div>
     </div>
-  </section>
+   </section>
   <!-- End Announcements--> 
-    <!--Event Festivals & News Articles Start-->
-    <section class="wf100 p80 news-event">
-      <div class="container">
-        <div class="row">
-          <div class="title-style-2 wf100">
-            <div class="col-md-4 col-sm-6">
-              <h2>News & Events</h2>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <p> </p>
-            </div>
-            <div class="col-md-2 col-sm-12 hide-mobile"> <a href="/news-list">View All</a> </div>
+  @endif
+  @if(count($news) > 0)
+  <!--Event Festivals & News Articles Start-->
+  <section class="wf100 p80 news-event">
+    <div class="container">
+      <div class="row">
+        <div class="title-style-2 wf100">
+          <div class="col-md-4 col-sm-6">
+            <h2>News & Events</h2>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            {{-- <div class="latest-updates">
-              <h6>Latest Updates <img src="images/newsicon.png" alt=""> </h6>
-              <ul>
-                <li> <strong><a href="#">Praesent pulvinar velit et elit fermentum aliquet.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
-                <li> <strong><a href="#">Quisque rhoncus urna hendrerit, bibendum podio non rhoncus est.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
-                <li> <strong><a href="#">Enim non non leo molestie libero sequi tempus orci nibh lacus.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
-                <li> <strong><a href="#">Proposal: How Dispose of illegal Properties in town.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
-              </ul>
-            </div> --}}
-            <div class="row news-wrapper news-grid">
-              @foreach($news as $key => $n)
-              <!--News Box Start-->
-              <div class="col-md-4 col-sm-6">
-                 <div class="news-box">
-                    <div class="new-thumb">
-                       <span class="cat c1">News</span> <img src="/storage/article_photos/thumbnail/{{$n->large_thumb}}" alt=""> 
-                    </div>
-                    <div class="new-txt">
-                       <ul class="news-meta">
-                          <?php 
-                              $date = date('d M, Y', strtotime($n->created_at));
-                          ?>
-                          <li>{{$date}}</li>
-                          <li></li>
-                       </ul>
-                       <h6><a href="/news/{{$n->slug}}">{{$n->title}}</a></h6>
-                       <?php 
-                        $teaser = substr(html_entity_decode(strip_tags($n->body)), 0, $sub_count[$key]);
-                       ?>
-                       <p> <?= $teaser ?> [...] </p>
-                    </div>
-                    <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="/news/{{$n->slug}}"><i class="fas fa-arrow-right"></i></a> </div>
-                 </div>
-              </div>
-              <!--News Box End--> 
-              @endforeach
-              
-           
-             
-             
-           </div>
+          <div class="col-md-6 col-sm-12">
+            <p> </p>
           </div>
-          
-          {{-- <div class="col-md-4 col-sm-4"> 
-          
-            <div class="event-post">
-              <div class="thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/tree2.jpg" alt=""> </div>
-              <div class="event-post-txt">
-                <h5><a href="#">Tree Planting Activity</a></h5>
-                <ul class="event-meta">
-                  <li><i class="far fa-calendar-alt"></i> December 20, 2020</li>
-                  <li><i class="far fa-clock"></i> 09:00am - 06:00pm</li>
-                </ul>
-                <p>Explore art objects from six contemporary artists & designers that focus on function</p>
-              </div>
-              <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
-            </div>
-             
-          </div> --}}
+          <div class="col-md-2 col-sm-12 hide-mobile"> <a href="/news-list">View All</a> </div>
         </div>
       </div>
-    </section>
-    <!--Event Festivals & News Articles End--> 
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          {{-- <div class="latest-updates">
+            <h6>Latest Updates <img src="images/newsicon.png" alt=""> </h6>
+            <ul>
+              <li> <strong><a href="#">Praesent pulvinar velit et elit fermentum aliquet.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
+              <li> <strong><a href="#">Quisque rhoncus urna hendrerit, bibendum podio non rhoncus est.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
+              <li> <strong><a href="#">Enim non non leo molestie libero sequi tempus orci nibh lacus.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
+              <li> <strong><a href="#">Proposal: How Dispose of illegal Properties in town.</a></strong> <span class="post-date"><i class="far fa-calendar-alt"></i> 27 December, 2020</span> </li>
+            </ul>
+          </div> --}}
+          <div class="row news-wrapper news-grid">
+            @foreach($news as $key => $n)
+            <!--News Box Start-->
+            <div class="col-md-4 col-sm-6">
+                <div class="news-box">
+                  <div class="new-thumb">
+                      <span class="cat c1">News</span> <img src="/storage/article_photos/thumbnail/{{$n->large_thumb}}" alt=""> 
+                  </div>
+                  <div class="new-txt">
+                      <ul class="news-meta">
+                        <?php 
+                            $date = date('d M, Y', strtotime($n->created_at));
+                        ?>
+                        <li>{{$date}}</li>
+                        <li></li>
+                      </ul>
+                      <h6><a href="/news/{{$n->slug}}">{{$n->title}}</a></h6>
+                      <?php 
+                      $teaser = substr(html_entity_decode(strip_tags($n->body)), 0, $sub_count[$key]);
+                      ?>
+                      <p> <?= $teaser ?> [...] </p>
+                  </div>
+                  <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="/news/{{$n->slug}}"><i class="fas fa-arrow-right"></i></a> </div>
+                </div>
+            </div>
+            <!--News Box End--> 
+            @endforeach
+            
+          
+            
+            
+          </div>
+        </div>
+        
+        {{-- <div class="col-md-4 col-sm-4"> 
+        
+          <div class="event-post">
+            <div class="thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="/images/tree2.jpg" alt=""> </div>
+            <div class="event-post-txt">
+              <h5><a href="#">Tree Planting Activity</a></h5>
+              <ul class="event-meta">
+                <li><i class="far fa-calendar-alt"></i> December 20, 2020</li>
+                <li><i class="far fa-clock"></i> 09:00am - 06:00pm</li>
+              </ul>
+              <p>Explore art objects from six contemporary artists & designers that focus on function</p>
+            </div>
+            <div class="event-post-loc"> <i class="fas fa-map-marker-alt"></i> Kalayaan Laguna, PH <a href="#"><i class="fas fa-arrow-right"></i></a> </div>
+          </div>
+            
+        </div> --}}
+      </div>
+    </div>
+  </section>
+  <!--Event Festivals & News Articles End--> 
+  @endif
     <!--Cityscapes & Highlights Start-->
     <section class="wf100 p80 city-highlights">
       <div class="container">
@@ -335,9 +339,7 @@
         </div>
         <div class="row">
           <div class="col-md-9">
-            <div class="row"> 
               @include('parts.departmentbox')
-            </div>
           </div>
           <div class="col-md-3">
             <div class="emergency-info">

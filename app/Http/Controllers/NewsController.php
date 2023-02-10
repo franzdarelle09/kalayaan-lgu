@@ -133,10 +133,19 @@ class NewsController extends Controller
     {
         $id = $request->get('news_id');
         $n = News::find($id);
-        unlink(public_path().'/storage/article_photos/'.$n->article_photo);
-        unlink(public_path().'/storage/article_photos/thumbnail/'.$n->small_thumb);
-        unlink(public_path().'/storage/article_photos/thumbnail/'.$n->medium_thumb);
-        unlink(public_path().'/storage/article_photos/thumbnail/'.$n->large_thumb);
+        $article_photo = public_path().'/storage/article_photos/'.$n->article_photo;
+        $small_thumb = public_path().'/storage/article_photos/thumbnail/'.$n->small_thumb;
+        $medium_thumb = public_path().'/storage/article_photos/thumbnail/'.$n->medium_thumb;
+        $large_thumb = public_path().'/storage/article_photos/thumbnail/'.$n->large_thumb;
+
+        if (file_exists($article_photo)) 
+            unlink($article_photo);
+        if (file_exists($small_thumb))
+            unlink($small_thumb);
+        if (file_exists($medium_thumb))
+            unlink($medium_thumb);
+        if (file_exists($large_thumb))
+            unlink($large_thumb);
         
         $n->delete();
         return 'success';

@@ -23,6 +23,19 @@
                         <a class="nav-link" href="/administration/documents/add">Add Document</a>
                     </nav>
                 </div>
+                
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts5" aria-expanded="false" aria-controls="collapseLayouts5">
+                    <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
+                    Contents
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="collapseLayouts5" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="/administration/contents/about-us">About Us</a>
+                        
+                    </nav>
+                </div>
+
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
                     <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
                     News

@@ -1053,6 +1053,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
+	height: 330px !important;
 }
 .department-box:hover:after {
 	opacity: 1;

@@ -1,4 +1,4 @@
- <!--Department Box Start-->
+<div class="row"> 
  <div class="col-md-4 col-sm-4">
     <div class="department-box mb30 c1">
       <h6>SOCIAL SECTOR</h6>
@@ -12,10 +12,9 @@
         <li><a href="#"><i class="fas fa-circle vishidden"></i>(PNP, MDRRMO, MSWDO)</a></li>
         
       </ul>
-      <a class="see-more" href="#">See More</a> </div>
-  </div>
-  <!--Department Box End--> 
-  <!--Department Box Start-->
+      <!-- <a class="see-more" href="#">See More</a>  -->
+    </div>
+ </div>
   <div class="col-md-4 col-sm-4">
     <div class="department-box mb30 c2">
       <h6>ECONOMIC SECTOR</h6>
@@ -28,10 +27,9 @@
         <li><a href="#"><i class="fas fa-circle vishidden"></i>(MEE, Tourism)</a></li>
         
       </ul>
-      <a class="see-more" href="#">See More</a> </div>
+      <!-- <a class="see-more" href="#">See More</a>  -->
+    </div>
   </div>
-  <!--Department Box End--> 
-  <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box mb30 c3">
       <h6 style="font-size: 14px;">ENVIRONMENTAL SECTOR</h6>
@@ -41,10 +39,9 @@
         
         
       </ul>
-      <a class="see-more" href="#">See More</a> </div>
+      <!-- <a class="see-more" href="#">See More</a>  -->
+    </div>
   </div>
-  <!--Department Box End--> 
-  <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box c4">
       <h6 style="font-size: 12px;">INFRASTRUCTURE GOVERNANCE</h6>
@@ -54,10 +51,9 @@
         <li><a href="#"><i class="fas fa-circle vishidden"></i>ASSESSOR(Housing)</a></li>
         
       </ul>
-      <a class="see-more" href="#">See More</a> </div>
+      <!-- <a class="see-more" href="#">See More</a>  -->
+    </div>
   </div>
-  <!--Department Box End--> 
-  <!--Department Box Start-->
   <div class="col-md-4 col-sm-4">
     <div class="department-box c5">
       <h6 style="font-size: 12px;">INSTITUTIONAL GOVERNANCE</h6>
@@ -71,7 +67,8 @@
         <li><a href="#"><i class="fas fa-circle"></i> Human Resource Management </a></li>
         <li><a href="#"><i class="fas fa-circle vishidden"></i> and Development (HRMO)</a></li>
       </ul>
-      <a class="see-more" href="#">See More</a> </div>
+      <!-- <a class="see-more" href="#">See More</a>  -->
+    </div>
   </div>
-  <!--Department Box End--> 
-  
+
+</div>

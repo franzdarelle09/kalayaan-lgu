@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Message;
 use App\Announcement;
+use App\Content;
 use App\Department;
 use App\Documentlist;
 use Illuminate\Http\Request;
@@ -17,6 +18,7 @@ class HomeController extends Controller
 {
     public function index(){
         $news = News::orderBy('created_at','desc')->take(3)->get();
+        $sub_count = [];
         foreach($news as $n){
             $sub_count[] = $this->getOptimalSubstrCount($n->title);
         }
@@ -41,7 +43,8 @@ class HomeController extends Controller
     }
 
     public function about(){
-        return view('about');
+        $content = Content::where('type','about-us')->first();
+        return view('about', compact('content'));
     }
 
     public function projects(){
