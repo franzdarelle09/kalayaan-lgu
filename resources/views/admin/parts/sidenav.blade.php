@@ -32,7 +32,7 @@
                 <div class="collapse" id="collapseLayouts5" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="/administration/contents/about-us">About Us</a>
-                        
+                        <a class="nav-link" href="/administration/highlights">Highlights</a>                        
                     </nav>
                 </div>
 

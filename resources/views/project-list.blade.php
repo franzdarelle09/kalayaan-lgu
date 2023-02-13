@@ -104,20 +104,25 @@
             
         </div>
        <div class="row">
-     
-          @foreach($projects as $p)
-          <div class="col-md-4 col-sm-4">
-            <div class="text-center">
-             <a href="/project-photos/<?= $p->id ?>" >
-             <img src="/images/folder.png" style="margin: auto;" />
-             </a>
+          @if(count($projects) > 0)
+            @foreach($projects as $p)
+            <div class="col-md-4 col-sm-4">
+              <div class="text-center">
+              <a href="/project-photos/<?= $p->id ?>" >
+              <img src="/images/folder.png" style="margin: auto;" />
+              </a>
+              </div>
+              <br>
+              <h5 class="text-center"><a href="/project-photos/<?= $p->id ?>" >{{ $p->name }}</a></h5>
+              <br><br>
             </div>
-             <br>
-             <h5 class="text-center"><a href="/project-photos/<?= $p->id ?>" >{{ $p->name }}</a></h5>
-             <br><br>
+            @endforeach
+          
+          @else
+          <div class="col-md-4 col-md-offset-4" style="margin-top: 20px;">  
+            <div class="text-center" style="font-size: 18px;">No projects available.</div>
           </div>
-    
-          @endforeach
+          @endif
         
           
        </div>

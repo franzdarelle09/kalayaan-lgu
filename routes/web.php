@@ -44,6 +44,9 @@ Route::middleware(['auth'])->group(function(){
     Route::prefix('administration')->group(function() {
         Route::get('/contents/{type}', 'ContentController@index');
         Route::post('/contents', 'ContentController@save');
+        Route::get('/highlights','HighlightsController@index');
+        Route::post('/highlights/details','HighlightsController@details');
+        Route::post('/highlights','HighlightsController@update');
     });
 
 });

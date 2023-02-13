@@ -266,12 +266,13 @@
       </div>
       <div class="container-fluid">
         <div id="highlight-slider" class="owl-carousel owl-theme"> 
+          @foreach($highlights as $highlight)
           <!--Item Start-->
           <div class="item">
             <div class="ch-box">
-              <div class="ch-thumb"> <img src="/images/hg1.jpg" alt=""> </div>
+              <div class="ch-thumb"> <img src="/storage/highlights_photos/<?= $highlight->image; ?>" alt=""> </div>
               <div class="ch-txt">
-                <h5><a href="#">Tree Planting</a></h5>
+                <h5><a href="#">{{ $highlight->title }}</a></h5>
                 {{-- <ul>
                   <li><a href="#"><i class="far fa-image"></i> 48 Photos</a></li>
                   <li><a href="#"><i class="fas fa-play-circle"></i> 21 Videos</a></li>
@@ -281,43 +282,7 @@
             </div>
           </div>
           <!--Item End--> 
-          <!--Item Start-->
-          <div class="item">
-            <div class="ch-box">
-              <div class="ch-thumb"> <img src="images/hg2.jpg" alt=""> </div>
-              <div class="ch-txt">
-                <h5><a href="#">Tourism</a></h5>
-              
-                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor felis.</p> --}}
-              </div>
-            </div>
-          </div>
-          <!--Item End--> 
-          
-          <!--Item Start-->
-          <div class="item">
-            <div class="ch-box">
-              <div class="ch-thumb"> <img src="/images/hg4.jpg" alt=""> </div>
-              <div class="ch-txt">
-                <h5><a href="#"> Landmarks </a></h5>
-               
-                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p> --}}
-              </div>
-            </div>
-          </div>
-          <!--Item End--> 
-          <!--Item Start-->
-          <div class="item">
-            <div class="ch-box">
-              <div class="ch-thumb"> <img src="/images/hg5.jpg" alt=""> </div>
-              <div class="ch-txt">
-                <h5><a href="#"> Delicacies </a></h5>
-               
-                {{-- <p>Aliquam facilisis lacus at risus condimentum, vitae auctor feli.</p> --}}
-              </div>
-            </div>
-          </div>
-          <!--Item End--> 
+          @endforeach
           
         </div>
       </div>

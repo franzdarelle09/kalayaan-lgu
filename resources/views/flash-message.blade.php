@@ -6,10 +6,10 @@
 @endif 
     
 @if ($message = Session::get('error'))
-<div class="alert alert-danger alert-dismissible fade show" role="alert">
-  <strong>{{ $message }}</strong>
-  <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i class="fa fa-close"></i></button> -->
-</div>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>qq{{ $message }}</strong>
+    <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i class="fa fa-close"></i></button> -->
+  </div>
 @endif
      
 @if ($message = Session::get('warning'))
@@ -27,8 +27,9 @@
 @endif
     
 @if ($errors->any())
-<div class="alert alert-danger alert-dismissible fade show" role="alert">
-  <strong>Please check the form below for errors</strong>
-  <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
-</div>
+    @foreach ($errors->all() as $error)
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>{{ $error }}</strong>
+      </div>
+    @endforeach
 @endif

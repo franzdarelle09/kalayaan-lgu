@@ -7,6 +7,7 @@ use App\Announcement;
 use App\Content;
 use App\Department;
 use App\Documentlist;
+use App\Highlights;
 use Illuminate\Http\Request;
 use App\User;
 use App\News;
@@ -18,12 +19,13 @@ class HomeController extends Controller
 {
     public function index(){
         $news = News::orderBy('created_at','desc')->take(3)->get();
+        $highlights = Highlights::orderBy('highlight_number','asc')->take(4)->get();
         $sub_count = [];
         foreach($news as $n){
             $sub_count[] = $this->getOptimalSubstrCount($n->title);
         }
         $announcements = Announcement::orderBy('id','desc')->get();
-        return view('home',compact('news','sub_count','announcements'));
+        return view('home',compact('news','sub_count','announcements','highlights'));
     }
 
     
