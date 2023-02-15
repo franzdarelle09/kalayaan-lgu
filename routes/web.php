@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 
@@ -44,9 +45,18 @@ Route::middleware(['auth'])->group(function(){
     Route::prefix('administration')->group(function() {
         Route::get('/contents/{type}', 'ContentController@index');
         Route::post('/contents', 'ContentController@save');
+        
         Route::get('/highlights','HighlightsController@index');
         Route::post('/highlights/details','HighlightsController@details');
         Route::post('/highlights','HighlightsController@update');
+
+        Route::get('/officials','OfficialsController@index');
+        Route::post('/officials/details','OfficialsController@details');
+        Route::post('/officials','OfficialsController@update');
+
+        Route::get('/hotlines', 'HotlineController@index');
+
+        Route::post('/image/crop','ImageController@crop');
     });
 
 });

@@ -11,6 +11,7 @@ use App\Highlights;
 use Illuminate\Http\Request;
 use App\User;
 use App\News;
+use App\Official;
 use App\Project;
 use App\ProjectPhoto;
 use Illuminate\Support\Facades\Hash;
@@ -41,7 +42,8 @@ class HomeController extends Controller
     }
 
     public function officials(){
-        return view('officials');
+        $officials = Official::where('status', 1)->get();
+        return view('officials', compact('officials'));
     }
 
     public function about(){

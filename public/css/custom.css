@@ -7190,3 +7190,7 @@ body{
 .department-box{
 	min-width: 262px !important;
 }
+
+.team-txt h5 {
+	height: 80px;
+}
