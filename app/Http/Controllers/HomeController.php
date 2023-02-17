@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Message;
 use App\Announcement;
+use App\Banner;
 use App\Content;
 use App\Department;
 use App\Documentlist;
 use App\Highlights;
+use App\Hotline;
 use Illuminate\Http\Request;
 use App\User;
 use App\News;
@@ -26,7 +28,9 @@ class HomeController extends Controller
             $sub_count[] = $this->getOptimalSubstrCount($n->title);
         }
         $announcements = Announcement::orderBy('id','desc')->get();
-        return view('home',compact('news','sub_count','announcements','highlights'));
+        $hotlines = Hotline::whereStatus(1)->get();
+        $banners = Banner::orderBy('id', 'asc')->get();
+        return view('home',compact('news','sub_count','announcements','highlights','hotlines', 'banners'));
     }
 
     

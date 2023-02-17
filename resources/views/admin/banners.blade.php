@@ -9,16 +9,15 @@
     }
     .preview {
         overflow: hidden;
-        width: 263px; 
-        height: 230px;
+        width: 1920; 
+        height: 400px;
         margin: 10px;
         border: 1px solid red;
     }
-    
 </style>
 <div class="row justify-content-center">
     <div class="row">
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" style="z-index: 1051;">
+        <div class="modal fade" id="modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" style="z-index: 1051;">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -30,13 +29,13 @@
                     <div class="modal-body">
                         <div class="img-container">
                             <div class="row">
-                                <div class="col-md-8">  
+                                <div class="col-md-10 col-md-offset-1">  
                                     <!--  default image where we will set the src via jquery-->
                                     <img id="image">
                                 </div>
-                                <div class="col-md-4">
+                                <!-- <div class="col-md-4">
                                     <div class="preview"></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -52,7 +51,7 @@
         <div class="card my-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                Officials
+                Banner
             </div>
             <div class="card-body">
                 <!-- Button trigger modal -->
@@ -71,36 +70,15 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="officials-form" method="POST" enctype="multipart/form-data">
+                        <form id="banners-form" method="POST">
                             @csrf
-                            <input type="hidden" id="officials-id" name="id" value="" />
+                            <input type="hidden" id="banner-id" name="id" value="" />
                             <input type="hidden" id="image-name" name="image_name" value="" />
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Title</label>
                                 <input type="text" class="form-control" name="name" id="name" required/>
                             </div>
-
-                            <div class="form-group">
-                                <label>Title</label>
-                                <input type="text" class="form-control" name="title" id="title" readonly="readonly" required/>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Facebook</label>
-                                <input type="text" class="form-control" name="facebook" id="facebook"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Twitter</label>
-                                <input type="text" class="form-control" name="twitter" id="twitter"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Instagram</label>
-                                <input type="text" class="form-control" name="instagram" id="instagram"/>
-                            </div>
-
-                            <input type="file" accept="image/*" class="image" name="officials_photo" />
+                            <input type="file" accept="image/*" class="image" name="banners_photo" />
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -110,40 +88,36 @@
                     </div>
                 </div>
                 </div>
-
                 <div class="table-responsive">
                     @include('flash-message')
-                    <table class="table table-bordered" id="dataTableHighlights" width="100%" cellspacing="0">
+                    <table class="table table-bordered" id="dataTableBanners" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Name</th>
-                                <th>Position</th>
                                 <th>Image</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Image</th>
-                                <th>Action</th>
-                            </tr>
-                        </tfoot>
                         <tbody>
-                            @foreach($officials as $o)
+                            @foreach($banners as $b)
                             <tr>
-                                <td>{{$o->name}}</td>
-                                <td>{{$o->title}}</td>
-                                <td><a href="/storage/officials_photos/<?= $o->image ?? 'default.png' ?>" target="_blank">Preview</a></td>
+                                <td>{{ $b->id }}</td>
+                                <td>{{$b->name}}</td>
+                                <td><a href="/storage/banners/<?= $b->image ?>" target="_blank">Preview</a></td>
                                 <td>
-                                    <button class="btn btn-sm btn-danger update-btn" data-officials-id="<?= $o->id ?>"> Update Official </button>
+                                    <button style="padding: 5px;" class="btn btn-sm btn-danger delete-btn" data-banner-id="<?= $b->id ?>"> <i class="fa fa-trash"></i> </button>
                                 </td>
-
                             </tr>                                                                                   
                             @endforeach
                         </tbody>
                     </table>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-12">
+                        <button class="btn btn-sm btn-danger add-btn float-right""> Add Banner </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,7 +141,6 @@
             bs_modal.modal('show');
         };
 
-
         if (files && files.length > 0) {
             file = files[0];
 
@@ -184,11 +157,8 @@
     });
 
     bs_modal.on('shown.bs.modal', function() {
-        var finalCropWidth = 263;
-        var finalCropHeight = 230;
-        var finalAspectRatio = finalCropWidth / finalCropHeight;
         cropper = new Cropper(image, {
-            aspectRatio: 263/230,
+            aspectRatio: 1920/400,
             viewMode: 0,
             preview: '.preview'
         });
@@ -199,8 +169,8 @@
 
     $("#crop").click(function() {
         canvas = cropper.getCroppedCanvas({
-            width: 263,
-            height: 230,
+            width: 1920,
+            height: 400,
         });
 
         canvas.toBlob(function(blob) {
@@ -219,7 +189,7 @@
                     type: "POST",
                     dataType: "json",
                     url: "/administration/image/crop",
-                    data: {image: base64data, path: 'officials_photos'},
+                    data: {image: base64data, path: 'banners'},
                     success: function(data) { 
                         $('#image-name').val(data);
                         bs_modal.modal('hide');
@@ -233,8 +203,13 @@
 <script>
     $(document).ready(function(){
         $(document).ready(function() {
-            $('#dataTableHighlights').DataTable({
-                order: [[2, 'asc']]
+            $('#dataTableBanners').DataTable({
+                columnDefs: [
+                    {   "targets": [0],
+                        "visible": false,
+                        "searchable": false
+                    },
+                ]
             });
         });
         $('#exampleModal').on('shown.bs.modal', function () {
@@ -242,8 +217,14 @@
             $('#myInput').trigger('focus')
         });
 
-        $(".update-btn").on('click', function() {
-            let id = $(this).data('officials-id');
+        $(".add-btn").on('click', function(){
+            $(".modal-title").html('Create Banner (1920 x 400)');
+
+            $('.hidden-btn').click();
+        });
+
+        $(".delete-btn").on('click', function() {
+            let id = $(this).data('banner-id');
 
             $.ajaxSetup({
                 headers: {
@@ -252,23 +233,16 @@
             });
             $.ajax({
                 type:'POST',
-                url:'/administration/officials/details',
+                url:'/administration/banners/delete',
                 data: {id:id},
                 success: function(res) {
-                    console.log(res);
-                    $(".modal-title").html('Update Official (263 x 230)');
-                    $("#name").val(res.name);
-                    $("#title").val(res.title);
-                    $("#facebook").val(res.facebook);
-                    $("#twitter").val(res.twitter);
-                    $("#instagram").val(res.instagram);
-                    $("#officials-id").val(res.id);
-                    $('.hidden-btn').click();
+                    window.location.reload();
                 }
             });
         });
+
         $("#submit-btn").on('click', function() {
-            $("#officials-form").submit();
+            $("#banners-form").submit();
         });
     });
 </script>

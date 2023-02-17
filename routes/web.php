@@ -55,6 +55,13 @@ Route::middleware(['auth'])->group(function(){
         Route::post('/officials','OfficialsController@update');
 
         Route::get('/hotlines', 'HotlineController@index');
+        Route::post('/hotlines/details', 'HotlineController@details');
+        Route::post('/hotlines', 'HotlineController@store');
+        Route::post('/hotlines/delete', 'HotlineController@delete');
+
+        Route::get('/banners/', 'BannerController@index');
+        Route::post('/banners/', 'BannerController@store');
+        Route::post('/banners/delete', 'BannerController@delete');
 
         Route::post('/image/crop','ImageController@crop');
     });

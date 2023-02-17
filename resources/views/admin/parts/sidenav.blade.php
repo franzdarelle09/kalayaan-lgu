@@ -34,6 +34,8 @@
                         <a class="nav-link" href="/administration/contents/about-us">About Us</a>
                         <a class="nav-link" href="/administration/highlights">Highlights</a>                        
                         <a class="nav-link" href="/administration/officials">Officials</a>                        
+                        <a class="nav-link" href="/administration/hotlines">Hotlines</a>                        
+                        <a class="nav-link" href="/administration/banners">Banners</a>                        
                     </nav>
                 </div>
 

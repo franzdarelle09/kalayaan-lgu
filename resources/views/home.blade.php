@@ -312,137 +312,37 @@
                 Emergency
                 Services </h5>
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
+                @foreach($hotlines as $hotline)
                 <!--Panel Start-->
                 <div class="panel">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Mayor Office </a> </h6>
+                  <div class="panel-heading" role="tab" id="heading<?= $hotline->id; ?>">
+                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?= $hotline->id ?>" aria-expanded="true" aria-controls="collapse<?= $hotline->id ?>"> {{$hotline->title}} </a> </h6>
                   </div>
-                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="collapse<?= $hotline->id ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?= $hotline->id; ?>">
                     <div class="panel-body">
                       <ul>
-                        <li> <i class="fas fa-user-tie"></i> Hon. Sandy Laganapan</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 501 7771</li>
-                        <li> <i class="fas fa-fax"></i>501 7771 </li>
-                        <li> <i class="far fa-envelope"></i> kalayaan_lgu@yahoo.com.ph </li>
+                        @if(!empty($hotline->contact_name))
+                        <li> <i class="fas fa-user-tie"></i> {{ $hotline->contact_name }}</li>
+                        @endif
+                        @if(!empty($hotline->address))
+                        <li> <i class="far fa-building"></i> {{ $hotline->address }}</li>
+                        @endif
+                        @if(!empty($hotline->mobile))
+                        <li> <i class="fas fa-phone"></i> {{ $hotline->mobile }}</li>
+                        @endif
+                        @if(!empty($hotline->landline))
+                        <li> <i class="fas fa-fax"></i> {{ $hotline->landline }} </li>
+                        @endif
+                        @if(!empty($hotline->email))
+                        <li> <i class="far fa-envelope"></i> {{ $hotline->email }} </li>
+                        @endif
                       </ul>
                     </div>
                   </div>
                 </div>
-                <!--Panel End--> 
-                
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading3">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3"> Police Emergency </a> </h6>
-                  </div>
-                  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> PNP</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 523-1815</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading31">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse31" aria-expanded="true" aria-controls="collapse31"> Fire Rescue </a> </h6>
-                  </div>
-                  <div id="collapse31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading31">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> BFP</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 523-3752</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading4a">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4a" aria-expanded="true" aria-controls="collapse4a"> MDRRMO </a> </h6>
-                  </div>
-                  <div id="collapse4a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4a">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> MDRRMO</li>
-                        <li> <i class="fas fa-phone"></i> (049) 523-3780</li>
+                <!--Panel End-->   
+                @endforeach
               
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading4">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4"> Health </a> </h6>
-                  </div>
-                  <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> MHO</li>
-                        <li> <i class="far fa-building"></i>Purok 1 Brgy. San Juan</li>
-                        <li> <i class="fas fa-phone"></i> 0933 347 5786</li>
-                        <li> <i class="fas fa-fax"></i>501 7753 </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading5">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5"> BRGY. SAN JUAN </a> </h6>
-                  </div>
-                  <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> BRGY. SAN JUAN</li>
-                        <li> <i class="fas fa-phone"></i> 0917 682 1149</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading6">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6"> BRGY. LONGOS </a> </h6>
-                  </div>
-                  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> BRGY. LONGOS</li>
-                        <li> <i class="fas fa-phone"></i> 523-9097</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
-                <!--Panel Start-->
-                <div class="panel">
-                  <div class="panel-heading" role="tab" id="heading7">
-                    <h6> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7"> BRGY. SAN ANTONIO </a> </h6>
-                  </div>
-                  <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-                    <div class="panel-body">
-                      <ul>
-                        <li> <i class="fas fa-user-tie"></i> BRGY. SAN ANTONIO</li>
-                        <li> <i class="fas fa-phone"></i> 0967 362 9257</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--Panel End--> 
               </div>
             </div>
             <div class="query">
