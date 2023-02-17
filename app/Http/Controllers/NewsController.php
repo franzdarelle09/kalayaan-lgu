@@ -21,6 +21,11 @@ class NewsController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required',
+            'thumbnail_image' => 'required'
+        ]);
+
         if ($request->hasFile('thumbnail')){
             $fileNameWithExtension = $request->file('thumbnail')->getClientOriginalName();
             $filename = pathinfo($fileNameWithExtension,PATHINFO_FILENAME);
@@ -47,32 +52,9 @@ class NewsController extends Controller
             //filename to store
             $filenametostore = $filename.'_'.time().'.'.$extension;
      
-            //small thumbnail name
-            $smallthumbnail = $filename.'_small_'.time().'.'.$extension;
-     
-            //medium thumbnail name
-            $mediumthumbnail = $filename.'_medium_'.time().'.'.$extension;
-     
-            //large thumbnail name
-            $largethumbnail = $filename.'_large_'.time().'.'.$extension;
      
             //Upload File
             $request->file('article_photo')->storeAs('public/article_photos', $filenametostore);
-            $request->file('article_photo')->storeAs('public/article_photos/thumbnail', $smallthumbnail);
-            $request->file('article_photo')->storeAs('public/article_photos/thumbnail', $mediumthumbnail);
-            $request->file('article_photo')->storeAs('public/article_photos/thumbnail', $largethumbnail);
-      
-            //create small thumbnail
-            $smallthumbnailpath = public_path('storage/article_photos/thumbnail/'.$smallthumbnail);
-            $this->createThumbnail($smallthumbnailpath, 150, 93);
-     
-            //create medium thumbnail
-            $mediumthumbnailpath = public_path('storage/article_photos/thumbnail/'.$mediumthumbnail);
-            $this->createThumbnail($mediumthumbnailpath, 300, 185);
-     
-            //create large thumbnail
-            $largethumbnailpath = public_path('storage/article_photos/thumbnail/'.$largethumbnail);
-            $this->createThumbnail($largethumbnailpath, 520, 390);
       
             // return redirect('image')->with('success', "Image uploaded successfully.");
         }else{
@@ -81,32 +63,23 @@ class NewsController extends Controller
 
         $news = ($request->input('news_id') !== NULL)  ? News::findOrFail($request->news_id) : new News;
         $news->title = $request->input('title');
-        if($thumbnail_status == 1){
-            if(file_exists("/storage/article_photos/$news->thumbnail") && $news->thumbnail != ""){
-                unlink("/storage/article_photos/$news->thumbnail");
-            }
-            $news->thumbnail = $fileNameToStore_o;
-        }
+        
         if ($article_photo_status == 1) {
             
             if(file_exists(public_path()."/storage/article_photos/".$news->article_photo) && $news->article_photo != ""){
                 unlink(public_path()."/storage/article_photos/$news->article_photo");
                 
             }
-            if(file_exists(public_path()."/storage/article_photos/thumbnail/$news->small_thumb") && $news->small_thumb != ""){
-                unlink(public_path()."/storage/article_photos/thumbnail/$news->small_thumb");
-                unlink(public_path()."/storage/article_photos/thumbnail/$news->medium_thumb");
-                unlink(public_path()."/storage/article_photos/thumbnail/$news->large_thumb");
-            }
+
             $news->article_photo = $filenametostore;
-            $news->small_thumb = $smallthumbnail;
-            $news->medium_thumb = $mediumthumbnail;
-            $news->large_thumb = $largethumbnail;
         }
+        $news->small_thumb = $request->input('thumbnail_image');
+        $news->medium_thumb = $request->input('thumbnail_image');
+        $news->large_thumb = $request->input('thumbnail_image');
         $news->body = $request->input('wysiwyg-editor');
         $news->slug = Str::slug($request->input('title').' '.time(), '-');
         $news->save();
-        return redirect('/administration/news/add');
+        return back()->with('success','News saved properly.');
     }
 
     public function createThumbnail($path, $width, $height)
